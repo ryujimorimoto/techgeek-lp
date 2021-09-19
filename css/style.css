@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  width: 92%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -68,6 +68,10 @@ body {
 @media (min-width: 900px) {
   .sp-none {
     display: block;
+  }
+
+  .pc-none {
+    display: none;
   }
 }
 
@@ -166,8 +170,12 @@ body {
     padding: 10%;
   }
 
-  .nav__item {
+  .nav__item:not(:last-child) {
     border-bottom: 1px solid #595757;
+  }
+
+  .nav__item:last-child {
+    margin-top: 10rem;
   }
 
   .nav__item a {
@@ -197,7 +205,35 @@ body {
 .header__btn {
   background-color: #4E84FF;
   color: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 0.5rem 1.2rem;
+  text-align: center;
+}
+
+.header__sp-btn {
   font-size: 1.2rem;
+}
+
+@media (min-width: 900px) {
+  .header__btn {
+    font-size: 1.8rem;
+  }
+}
+
+/* PC版ナビゲーションメニュー */
+@media (min-width: 900px) {
+  .nav-button {
+    display: none;
+  }
+
+  .nav {
+    padding: 1.6rem 0;
+    width: 80%;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
