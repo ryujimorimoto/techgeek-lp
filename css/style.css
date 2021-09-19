@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* サイズの基準設定：1rem = 10px; */
+html {
+  font-size: 62.5%;
+}
+
+/* テキストの基本設定 */
+body {
+  color: #252525;
+  font-size: 1.6rem;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  line-height: 1.69;
+}
+
+/* リセット/ノーマライズ */
+body, h1, h2, h3, h4, h5, h6, p, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
