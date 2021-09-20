@@ -75,6 +75,18 @@ body {
   }
 }
 
+/* 共通：予約ボタン */
+.reserve-btn {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #4E84FF;
+  text-align: center;
+  border-radius: 50px;
+  padding: 1.8rem 0;
+  font-size: 1.8rem;
+}
+
 /* ヘッダー */
 .header {
   background-color: #ffffff;
@@ -205,7 +217,7 @@ body {
 .header__btn {
   background-color: #4E84FF;
   color: #FFFFFF;
-  border-radius: 30px;
+  border-radius: 50px;
   padding: 0.5rem 1.2rem;
   text-align: center;
 }
@@ -236,4 +248,70 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+/* ヒーロー：全体 */
+.hero__inner {
+  padding-bottom: 2.3rem;
+}
+
+@media (min-width: 900px) {
+  .hero--pc-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero--pc-left,
+  .hero__img {
+    width: 48%;
+  }
+}
+
+/* ヒーロー：テキスト */
+.hero__text-wrapper {
+  text-align: center;
+}
+
+.hero--big-text {
+  font-size: 3.6rem;
+}
+
+.hero__text {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.hero__text--middle {
+  font-size: 1.8rem;
+}
+
+/* fontを読み込んでから適用 */
+/* .hero__text--shopify {
+  font-family: ;
+} */
+
+/* ヒーロー：画像 */
+.hero__img--circle {
+  padding-left: 4.0rem;
+}
+
+.hero__img {
+  width: 68%;
+  margin: 0 auto;
+}
+
+.hero__inner {
+  position: relative;
+}
+
+.hero__img--bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* ヒーロー：ボタン */
+.hero__btn {
+  margin-top: 1.1rem;
 }
