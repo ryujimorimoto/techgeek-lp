@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="424.116" viewBox="0 0 375 424.116">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.939" y1="0.199" x2="0.382" y2="0.749" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#4e84ff"/>
+    </linearGradient>
+  </defs>
+  <path id="FV背景_4E84FFグラデーション" data-name="FV背景#4E84FFグラデーション" d="M8458,615.393s25.918-57.611,52.488-74.621,80.544-1.78,113.873-38.995,26.159-46.261,44.791-74.534,48.542-36.5,68.548-37.755,34.278,1.263,46.63-9.741,28.545-35.879,28.545-35.879L8833,308.2V732.32H8458Z" transform="translate(-8458 -308.204)" fill="url(#linear-gradient)"/>
+</svg>
