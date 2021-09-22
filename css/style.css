@@ -87,6 +87,12 @@ body {
   font-size: 1.8rem;
 }
 
+@media (min-width: 900px) {
+  .reserve-btn {
+    width: 37%;
+  }
+}
+
 /* ヘッダー */
 .header {
   background-color: #ffffff;
@@ -163,7 +169,7 @@ body {
     right: -120%;
     width: 80%;
     height: 100vh;
-    background-color: #000000;
+    background-color: #000000e0;
     color: #ffffff;
     z-index: 50;
     transition: right 0.5s;
@@ -256,20 +262,31 @@ body {
 }
 
 @media (min-width: 900px) {
-  .hero--pc-flex {
-    display: flex;
-    justify-content: space-around;
+  .hero__inner {
+    padding: 6rem 0 5rem;
   }
 
-  .hero--pc-left,
-  .hero__img {
-    width: 48%;
+  .hero--pc-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero--pc-left {
+    width: 32%;
+  }
+
+  .hero--pc-right {
+    width: 42%;
   }
 }
 
 /* ヒーロー：テキスト */
 .hero__text-wrapper {
   text-align: center;
+}
+
+.text90 {
+  width: 17%;
 }
 
 .hero--big-text {
@@ -289,6 +306,32 @@ body {
 /* .hero__text--shopify {
   font-family: ;
 } */
+
+@media (min-width: 900px) {
+  .hero__text-wrapper {
+    text-align: left;
+  }
+
+  .hero__title {
+    font-size: 3.2rem;
+  }
+
+  .text90 {
+    width: 20%;
+  }
+
+  .hero--big-text {
+    font-size: 4.3rem;
+  }
+
+  .hero__text {
+    font-size: 2.1rem;
+  }
+  
+  .hero__text--middle {
+    font-size: 2.7rem;
+  }
+}
 
 /* ヒーロー：画像 */
 .hero__img--circle {
@@ -311,7 +354,23 @@ body {
   z-index: -1;
 }
 
+@media (min-width: 900px) {
+  .hero__img--circle {
+    padding-left: 0;
+  }
+
+  .hero__img {
+    width: 100%;
+  }
+}
+
 /* ヒーロー：ボタン */
 .hero__btn {
   margin-top: 1.1rem;
+}
+
+@media (min-width: 900px) {
+  .hero__btn {
+    margin-top: 4.3rem;
+  }
 }
