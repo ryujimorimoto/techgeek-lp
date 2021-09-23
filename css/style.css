@@ -232,7 +232,7 @@ body {
   font-size: 1.2rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 590px) {
   .header__btn {
     font-size: 1.8rem;
   }
@@ -256,6 +256,21 @@ body {
   }
 }
 
+/* タブレット版メニュー（予約ボタンの変更） */
+.tb-only {
+  display: none;
+}
+
+@media (min-width: 900px) and (max-width: 1120px) {
+  .tb-none {
+    display: none;
+  }
+
+  .tb-only {
+    display: block;
+  }
+}
+
 /* ヒーロー：全体 */
 .hero__inner {
   padding-bottom: 2.3rem;
@@ -269,11 +284,13 @@ body {
   .hero--pc-flex {
     display: flex;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .hero--pc-left {
-    width: 32%;
-  }
+  /* .hero--pc-left {
+    width: 45%;
+  } */
 
   .hero--pc-right {
     width: 42%;
@@ -286,7 +303,7 @@ body {
 }
 
 .text90 {
-  width: 17%;
+  width: 6.7rem;
 }
 
 .hero--big-text {
@@ -317,7 +334,7 @@ body {
   }
 
   .text90 {
-    width: 20%;
+    width: 8.6rem;
   }
 
   .hero--big-text {
