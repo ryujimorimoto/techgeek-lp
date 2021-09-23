@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -90,6 +90,28 @@ body {
 @media (min-width: 900px) {
   .reserve-btn {
     width: 37%;
+  }
+}
+
+/* 共通：章タイトル */
+.section__title {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.section__title::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 3rem;
+  height: 1rem;
+  background-color: #4584FB;
+  border-radius: 50px;
+}
+
+@media (min-width: 900px) {
+  .section__title::after {
+    width: 8rem;
   }
 }
 
@@ -390,4 +412,9 @@ body {
   .hero__btn {
     margin-top: 4.3rem;
   }
+}
+
+/* テックギークとは（about-us） */
+.about-us--wrapper {
+  background-color: #E5F3FF;
 }
