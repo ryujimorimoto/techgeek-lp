@@ -97,6 +97,7 @@ body {
 .section__title {
   font-size: 3.2rem;
   text-align: center;
+  margin-bottom: 4.8rem;
 }
 
 .section__title::after {
@@ -113,6 +114,18 @@ body {
   .section__title::after {
     width: 8rem;
   }
+}
+
+/* 共通：黄色マーカー */
+.yellow-marker {
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, #FFF500 60%);
+}
+
+/* 共通：注釈 */
+.annotation {
+  color: #707070;
+  font-size: 1.2rem;
 }
 
 /* ヘッダー */
@@ -414,7 +427,86 @@ body {
   }
 }
 
-/* テックギークとは（about-us） */
-.about-us--wrapper {
+/* テックギークとは:nextボタン */
+.next-btn--wrapper {
+  text-align: center;
+}
+
+.next-btn {
+  color: #4E84FF;
+  display: inline-block;
+}
+
+/* テックギークとは:左背景画像 */
+.about--wrapper {
   background-color: #E5F3FF;
+  position: relative;
+}
+
+.about--bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+}
+
+@media (min-width: 900px) {
+  .about--bg-left {
+    width: 25rem;
+  }
+}
+
+/* テックギークとは:右背景画像 */
+.about-description {
+  position: relative;
+}
+
+.about--bg-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10rem;
+}
+
+@media (min-width: 900px) {
+  .about--bg-right {
+    width: 20rem;
+  }
+}
+
+/* テックギークとは（about-descrioption） */
+.about-description__text {
+  width: 82%;
+  margin: 0 auto;
+  padding: 5rem 0 6rem;
+  line-height: 1.87;
+}
+
+@media (min-width: 900px) {
+  .about-description__text {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+/* テックギークとは（about-details） */
+.about-details {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+.about-details--container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .about-details--container {
+    display: flex;
+  }
+
+  .about-details__contents {
+    width: 33%;
+  }
 }
