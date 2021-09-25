@@ -450,6 +450,12 @@ body {
   width: 10rem;
 }
 
+@media (min-width: 590px) {
+  .about--bg-left {
+    width: 20rem;
+  }
+}
+
 @media (min-width: 900px) {
   .about--bg-left {
     width: 25rem;
@@ -466,6 +472,16 @@ body {
   bottom: 0;
   right: 0;
   width: 10rem;
+}
+
+.about--bg-right img {
+  width: 100%;
+}
+
+@media (min-width: 590px) {
+  .about--bg-right {
+    width: 13rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -490,7 +506,7 @@ body {
   }
 }
 
-/* テックギークとは（about-details） */
+/* テックギークとは（about-details）:全体 */
 .about-details {
   background-color: #ffffff;
   padding: 5rem 0;
@@ -501,12 +517,48 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 899px) {
+  .about-details--container div:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+
 @media (min-width: 900px) {
   .about-details--container {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .about-details__contents {
-    width: 33%;
+    width: 32%;
   }
 }
+/* テックギークとは（about-details）:テキスト */
+.about-details__title {
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+}
+
+@media (min-width: 900px) {
+  .about-details__title {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* テックギークとは（about-details）:画像 */
+.about-details__image {
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+
+.about-details1 {
+  width: 65%;
+}
+
+.about-details__image img {
+  width: 100%;
+}
+
+
