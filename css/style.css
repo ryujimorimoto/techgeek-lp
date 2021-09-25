@@ -37,6 +37,7 @@ body {
   font-size: 1.6rem;
   font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
   line-height: 1.69;
+  padding-top: 5.5rem;
 }
 
 .container {
@@ -44,12 +45,23 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 590px) {
+  body {
+    padding-top: 11rem;
+  }
+}
+
 @media (min-width: 900px) {
+  body {
+    padding-top: 7.2rem;
+  }
+
   .container {
     max-width: 1200px;
   }
 }
 
+/* 共通設定 */
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -132,6 +144,10 @@ body {
 .header {
   background-color: #ffffff;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 
 .header__inner {
@@ -359,11 +375,7 @@ body {
   font-family: ;
 } */
 
-@media (min-width: 900px) {
-  .hero__text-wrapper {
-    text-align: left;
-  }
-
+@media (min-width: 590px) {
   .hero__title {
     font-size: 3.2rem;
   }
@@ -382,6 +394,12 @@ body {
   
   .hero__text--middle {
     font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__text-wrapper {
+    text-align: left;
   }
 }
 
@@ -404,6 +422,17 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
+  width: 100%;
+}
+
+.hero__img--bg img {
+  width: 100%;
+}
+
+@media (min-width: 590px) {
+  .hero__img--circle {
+    padding-left: 18rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -428,13 +457,22 @@ body {
 }
 
 /* テックギークとは:nextボタン */
-.next-btn--wrapper {
-  text-align: center;
-}
-
 .next-btn {
   color: #4E84FF;
-  display: inline-block;
+  background-color: #fff;
+  width: 12.5rem;
+  height: 2.4rem;
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 900px) {
+  .next-btn {
+    width: 25.8rem;
+    height: 3.2rem;
+  }
 }
 
 /* テックギークとは:左背景画像 */
