@@ -37,7 +37,8 @@ body {
   font-size: 1.6rem;
   font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
   line-height: 1.69;
-  padding-top: 5.5rem;
+  /* ヘッダー固定する場合は必要 */
+  /* padding-top: 5.5rem; */
 }
 
 .container {
@@ -46,15 +47,17 @@ body {
 }
 
 @media (min-width: 590px) {
-  body {
+  /* ヘッダー固定する場合は必要 */
+  /* body {
     padding-top: 11rem;
-  }
+  } */
 }
 
 @media (min-width: 900px) {
-  body {
+  /* ヘッダー固定する場合は必要 */
+  /* body {
     padding-top: 7.2rem;
-  }
+  } */
 
   .container {
     max-width: 1200px;
@@ -110,6 +113,7 @@ body {
   font-size: 3.2rem;
   text-align: center;
   margin-bottom: 4.8rem;
+  padding-top: 5rem;
 }
 
 .section__title::after {
@@ -144,10 +148,11 @@ body {
 .header {
   background-color: #ffffff;
   width: 100%;
-  position: fixed;
+  /* ヘッダー固定する場合は必要 */
+  /* position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 20; */
 }
 
 .header__inner {
@@ -339,6 +344,7 @@ body {
     margin: 0 auto;
   }
 
+  /* テキストはwidthを指定しない方が自動で幅を調整してくれるため削除 */
   /* .hero--pc-left {
     width: 45%;
   } */
@@ -532,7 +538,7 @@ body {
 .about-description__text {
   width: 82%;
   margin: 0 auto;
-  padding: 5rem 0 6rem;
+  padding-bottom: 6rem;
   line-height: 1.87;
 }
 
@@ -599,4 +605,8 @@ body {
   width: 100%;
 }
 
+/* なぜ、shopify?(reason) */
+.reason {
+  background-color: #F2F3F6;
+}
 
