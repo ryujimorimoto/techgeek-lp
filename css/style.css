@@ -610,3 +610,74 @@ body {
   background-color: #F2F3F6;
 }
 
+/* (reason) :アコーディオン全体幅*/
+.accordion {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* (reason) :アコーディオンアイテム*/
+.accordion__item {
+  /* あとで修正*/
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/* (reason) :アコーディオンタイトル*/
+.accordion__title {
+  position: relative;
+  /* あとで修正*/
+  padding: 15px 60px 15px 20px;
+  font-weight: bold;
+  /* あとで修正*/
+  cursor: pointer;
+}
+
+/* (reason) :アコーディオン(+)ボタン*/
+.accordion__title::before,
+.accordion__title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: #FE362F;
+  width: 20px;
+  height: 4px;
+  transition: all 0.3s;
+}
+
+.accordion__title::after {
+  transform: rotate(90deg);
+}
+
+/* (reason) :アコーディオンコンテンツ*/
+.accordion__content {
+  /* あとで修正*/
+  padding: 0 20px 15px 20px;
+  display: none;
+  /* あとで修正*/
+  cursor: pointer;
+}
+
+.accordion__content.is-open {
+  display: block;
+}
+
+/* (reason) :アコーディオン展開時(-)ボタン*/
+.accordion__item.is-active .accordion__title::before {
+  transform: rotate(180deg);
+}
+
+.accordion__item.is-active .accordion__title::after {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+
+
+
+
+
