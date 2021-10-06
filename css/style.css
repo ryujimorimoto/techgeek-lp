@@ -37,19 +37,34 @@ body {
   font-size: 1.6rem;
   font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
   line-height: 1.69;
+  /* ヘッダー固定する場合は必要 */
+  /* padding-top: 5.5rem; */
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
+@media (min-width: 590px) {
+  /* ヘッダー固定する場合は必要 */
+  /* body {
+    padding-top: 11rem;
+  } */
+}
+
 @media (min-width: 900px) {
+  /* ヘッダー固定する場合は必要 */
+  /* body {
+    padding-top: 7.2rem;
+  } */
+
   .container {
     max-width: 1200px;
   }
 }
 
+/* 共通設定 */
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -93,10 +108,51 @@ body {
   }
 }
 
+/* 共通：章タイトル */
+.section__title {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+  padding-top: 5rem;
+}
+
+.section__title::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 3rem;
+  height: 1rem;
+  background-color: #4584FB;
+  border-radius: 50px;
+}
+
+@media (min-width: 900px) {
+  .section__title::after {
+    width: 8rem;
+  }
+}
+
+/* 共通：黄色マーカー */
+.yellow-marker {
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, #FFF500 60%);
+}
+
+/* 共通：注釈 */
+.annotation {
+  color: #707070;
+  font-size: 1.2rem;
+}
+
 /* ヘッダー */
 .header {
   background-color: #ffffff;
   width: 100%;
+  /* ヘッダー固定する場合は必要 */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20; */
 }
 
 .header__inner {
@@ -232,7 +288,7 @@ body {
   font-size: 1.2rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 590px) {
   .header__btn {
     font-size: 1.8rem;
   }
@@ -256,6 +312,21 @@ body {
   }
 }
 
+/* タブレット版メニュー（予約ボタンの変更） */
+.tb-only {
+  display: none;
+}
+
+@media (min-width: 900px) and (max-width: 1120px) {
+  .tb-none {
+    display: none;
+  }
+
+  .tb-only {
+    display: block;
+  }
+}
+
 /* ヒーロー：全体 */
 .hero__inner {
   padding-bottom: 2.3rem;
@@ -269,11 +340,14 @@ body {
   .hero--pc-flex {
     display: flex;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .hero--pc-left {
-    width: 32%;
-  }
+  /* テキストはwidthを指定しない方が自動で幅を調整してくれるため削除 */
+  /* .hero--pc-left {
+    width: 45%;
+  } */
 
   .hero--pc-right {
     width: 42%;
@@ -286,7 +360,7 @@ body {
 }
 
 .text90 {
-  width: 17%;
+  width: 6.7rem;
 }
 
 .hero--big-text {
@@ -307,17 +381,13 @@ body {
   font-family: ;
 } */
 
-@media (min-width: 900px) {
-  .hero__text-wrapper {
-    text-align: left;
-  }
-
+@media (min-width: 590px) {
   .hero__title {
     font-size: 3.2rem;
   }
 
   .text90 {
-    width: 20%;
+    width: 8.6rem;
   }
 
   .hero--big-text {
@@ -330,6 +400,12 @@ body {
   
   .hero__text--middle {
     font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__text-wrapper {
+    text-align: left;
   }
 }
 
@@ -352,6 +428,17 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
+  width: 100%;
+}
+
+.hero__img--bg img {
+  width: 100%;
+}
+
+@media (min-width: 590px) {
+  .hero__img--circle {
+    padding-left: 18rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -374,3 +461,152 @@ body {
     margin-top: 4.3rem;
   }
 }
+
+/* テックギークとは:nextボタン */
+.next-btn {
+  color: #4E84FF;
+  background-color: #fff;
+  width: 12.5rem;
+  height: 2.4rem;
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 900px) {
+  .next-btn {
+    width: 25.8rem;
+    height: 3.2rem;
+  }
+}
+
+/* テックギークとは:左背景画像 */
+.about--wrapper {
+  background-color: #E5F3FF;
+  position: relative;
+}
+
+.about--bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+}
+
+@media (min-width: 590px) {
+  .about--bg-left {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .about--bg-left {
+    width: 25rem;
+  }
+}
+
+/* テックギークとは:右背景画像 */
+.about-description {
+  position: relative;
+}
+
+.about--bg-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10rem;
+}
+
+.about--bg-right img {
+  width: 100%;
+}
+
+@media (min-width: 590px) {
+  .about--bg-right {
+    width: 13rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .about--bg-right {
+    width: 20rem;
+  }
+}
+
+/* テックギークとは（about-descrioption） */
+.about-description__text {
+  width: 82%;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  line-height: 1.87;
+}
+
+@media (min-width: 900px) {
+  .about-description__text {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+/* テックギークとは（about-details）:全体 */
+.about-details {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+.about-details--container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+@media (max-width: 899px) {
+  .about-details--container div:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-details--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .about-details__contents {
+    width: 32%;
+  }
+}
+/* テックギークとは（about-details）:テキスト */
+.about-details__title {
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+}
+
+@media (min-width: 900px) {
+  .about-details__title {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* テックギークとは（about-details）:画像 */
+.about-details__image {
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+
+.about-details1 {
+  width: 65%;
+}
+
+.about-details__image img {
+  width: 100%;
+}
+
+/* なぜ、shopify?(reason) */
+.reason {
+  background-color: #F2F3F6;
+}
+
