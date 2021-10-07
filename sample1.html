@@ -1,22 +1,85 @@
-/*--------------------------
-ナビゲーションメニュー開閉
-----------------------------*/
-
-function navToggle() {
-  document.querySelector('html').classList.toggle('open');
-  document.getElementById('modal-gray').classList.toggle('modal-open');
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 簡易リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-function closeNav() {
-  document.querySelector('html').classList.remove('open');
-  document.getElementById('modal-gray').classList.toggle('modal-open');
+/* アコーディオン全体 */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/*---------------------------------
-アコーディオンメニュー: 使用する関数の定義
-----------------------------------*/
+/* アコーディオン */
+.accordion__item {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
-// 要素をスライドしながら非表示にする関数（jQueryのslideUpと同じ）
+/* アコーディオンのタイトル */
+.accordion__title {
+  position: relative;
+  padding: 15px 60px 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* (+)アイコン */
+.accordion__title::before,
+.accordion__title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: #3abec1;
+  width: 20px;
+  height: 4px;
+  transition: all 0.3s;
+}
+
+.accordion__title::after {
+  transform: rotate(90deg);
+}
+
+/* アコーディオンのコンテンツ */
+.accordion__content {
+  padding: 0 20px 15px 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.accordion__content.is-open {
+  display: block;
+}
+
+/* アコーディオン展開時の(-)アイコン */
+.accordion__item.is-active .accordion__title::before {
+  transform: rotate(180deg);
+}
+
+.accordion__item.is-active .accordion__title::after {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+  </style>
+  <script>
+    /* =================================================== */
+// slideUp, slideDown, slideToggle関数を定義
+/* =================================================== */
+
+// 要素をスライドしながら非表示にする関数(jQueryのslideUpと同じ)
 const slideUp = (el, duration = 300) => {
   el.style.height = el.offsetHeight + "px";
   el.offsetHeight;
@@ -87,22 +150,20 @@ const slideToggle = (el, duration = 300) => {
   }
 };
 
-/*---------------------------------
-アコーディオンメニュー: DOM操作
-----------------------------------*/
+/* =================================================== */
+// DOM操作
+/* =================================================== */
 
 // アコーディオンを全て取得
-const accordions = document.querySelectorAll('.js-accordion');
-// コンソールで値確認用
+const accordions = document.querySelectorAll(".js-accordion");
 console.log(accordions);
-
-// // 取得したアコーディオンをArrayに変換（IE対策）
+// 取得したアコーディオンをArrayに変換(IE対策)
 const accordionsArr = Array.prototype.slice.call(accordions);
 
 accordionsArr.forEach((accordion) => {
   // Triggerを全て取得
   const accordionTriggers = accordion.querySelectorAll(".js-accordion-trigger");
-  // TriggerをArrayに変換（IE対策）
+  // TriggerをArrayに変換(IE対策)
   const accordionTriggersArr = Array.prototype.slice.call(accordionTriggers);
 
   accordionTriggersArr.forEach((trigger) => {
@@ -117,31 +178,23 @@ accordionsArr.forEach((accordion) => {
     });
   });
 });
-
-
-// sample2の方法
-// const menu = document.querySelectorAll(".accordion__title");
-
-// function toggle() {
-//   const content = this.nextElementSibling;
-//   this.classList.toggle("is-active");
-//   content.classList.toggle("is-open");
-// }
-
-// for (let i = 0; i < menu.length; i++) {
-//   menu[i].addEventListener("click", toggle);
-// }
-
-
-// getElementsByClassNameを使用した方法
-// const accordions = document.getElementsByClassName("js-accordion-trigger");
-// console.log(accordions);
-// const accordionsArr = Array.from(accordions);
-// console.log(accordionsArr);
-// accordionsArr.forEach((trigger) => {
-//   trigger.addEventListener("click", () => {
-//     trigger.classList.toggle("is-active");
-//     const content = trigger.querySelector(".accordion__content");
-//     slideToggle(content);
-//   });
-// }); 
+  </script>
+</head>
+  
+<body>
+  <dl class="accordion js-accordion">
+    <div class="accordion__item js-accordion-trigger is-active">
+      <dt class="accordion__title">DEMO2のタイトル</dt>
+      <dd class="accordion__content is-open">DEMO2のコンテンツ</dd>
+    </div>
+    <div class="accordion__item js-accordion-trigger">
+      <dt class="accordion__title">DEMO2のタイトル</dt>
+      <dd class="accordion__content">DEMO2のコンテンツ</dd>
+    </div>
+    <div class="accordion__item js-accordion-trigger">
+      <dt class="accordion__title">DEMO2のタイトル</dt>
+      <dd class="accordion__content">DEMO2のコンテンツ</dd>
+    </div>
+  </dl>
+</body>
+</html>
