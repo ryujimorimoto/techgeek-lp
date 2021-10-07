@@ -1,7 +1,16 @@
 @charset "UTF-8";
 
 /* リセット/ノーマライズ */
-body, h1, h2, h3, h4, h5, h6, p, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -35,7 +44,7 @@ html {
 body {
   color: #252525;
   font-size: 1.6rem;
-  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
   line-height: 1.69;
   /* ヘッダー固定する場合は必要 */
   /* padding-top: 5.5rem; */
@@ -95,7 +104,7 @@ body {
   width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
-  color: #4E84FF;
+  color: #4e84ff;
   text-align: center;
   border-radius: 50px;
   padding: 1.8rem 0;
@@ -117,12 +126,12 @@ body {
 }
 
 .section__title::after {
-  content: '';
+  content: "";
   display: block;
   margin: 0 auto;
   width: 3rem;
   height: 1rem;
-  background-color: #4584FB;
+  background-color: #4584fb;
   border-radius: 50px;
 }
 
@@ -135,7 +144,7 @@ body {
 /* 共通：黄色マーカー */
 .yellow-marker {
   font-weight: bold;
-  background: linear-gradient(transparent 60%, #FFF500 60%);
+  background: linear-gradient(transparent 60%, #fff500 60%);
 }
 
 /* 共通：注釈 */
@@ -186,7 +195,7 @@ body {
 
 .nav-button::before,
 .nav-button::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   background-color: currentColor;
@@ -277,8 +286,8 @@ body {
 
 /* ヘッダー予約ボタン */
 .header__btn {
-  background-color: #4E84FF;
-  color: #FFFFFF;
+  background-color: #4e84ff;
+  color: #ffffff;
   border-radius: 50px;
   padding: 0.5rem 1.2rem;
   text-align: center;
@@ -397,7 +406,7 @@ body {
   .hero__text {
     font-size: 2.1rem;
   }
-  
+
   .hero__text--middle {
     font-size: 2.7rem;
   }
@@ -411,7 +420,7 @@ body {
 
 /* ヒーロー：画像 */
 .hero__img--circle {
-  padding-left: 4.0rem;
+  padding-left: 4rem;
 }
 
 .hero__img {
@@ -464,7 +473,7 @@ body {
 
 /* テックギークとは:nextボタン */
 .next-btn {
-  color: #4E84FF;
+  color: #4e84ff;
   background-color: #fff;
   width: 12.5rem;
   height: 2.4rem;
@@ -483,7 +492,7 @@ body {
 
 /* テックギークとは:左背景画像 */
 .about--wrapper {
-  background-color: #E5F3FF;
+  background-color: #e5f3ff;
   position: relative;
 }
 
@@ -590,7 +599,6 @@ body {
   }
 }
 
-
 /* テックギークとは（about-details）:画像 */
 .about-details__image {
   width: 80%;
@@ -607,7 +615,7 @@ body {
 
 /* なぜ、shopify?(reason) */
 .reason {
-  background-color: #F2F3F6;
+  background-color: #f2f3f6;
 }
 
 /* (reason) :アコーディオン全体幅*/
@@ -643,7 +651,7 @@ body {
   top: 0;
   bottom: 0;
   margin: auto 0;
-  background-color: #FE362F;
+  background-color: #fe362f;
   width: 20px;
   height: 4px;
   transition: all 0.3s;
@@ -656,14 +664,20 @@ body {
 /* (reason) :アコーディオンコンテンツ*/
 .accordion__content {
   /* あとで修正*/
-  padding: 0 20px 15px 20px;
-  display: none;
+  /* padding: 0 20px 15px 20px;
+  display: none; */
   /* あとで修正*/
-  cursor: pointer;
+  line-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
 }
 
 .accordion__content.is-open {
-  display: block;
+  line-height: 1.5;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.1s;
 }
 
 /* (reason) :アコーディオン展開時(-)ボタン*/
@@ -675,9 +689,3 @@ body {
   transform: rotate(180deg);
   opacity: 0;
 }
-
-
-
-
-
-
