@@ -18,8 +18,8 @@ window.addEventListener("load", loaded => {
   ----------------------------------*/
   [].slice.call(document.getElementsByClassName("js-accordion-trigger"))
     .map( elm => elm.addEventListener("click", () => {
+        elm.classList.toggle("is-active");
         elm.querySelector(".accordion__content").classList.toggle("is-open");
-        console.log(elm)
       }
       )
     );

@@ -78,7 +78,7 @@
     /* =================================================== */
 // slideUp, slideDown, slideToggle関数を定義
 /* =================================================== */
-
+window.addEventListener("load", loaded => {
 // 要素をスライドしながら非表示にする関数(jQueryのslideUpと同じ)
 const slideUp = (el, duration = 300) => {
   el.style.height = el.offsetHeight + "px";
@@ -177,6 +177,7 @@ accordionsArr.forEach((accordion) => {
       slideToggle(content);
     });
   });
+});
 });
   </script>
 </head>

@@ -61,12 +61,9 @@ section {
   height: auto;
   opacity: 1;
 }
-
-
-
-
 </style>
 <script>
+window.addEventListener("load", loaded => {
 const menu = document.querySelectorAll(".js-menu");
 
 function toggle() {
@@ -78,6 +75,8 @@ function toggle() {
 for (let i = 0; i < menu.length; i++) {
   menu[i].addEventListener("click", toggle);
 }
+
+});
 </script>
 <body>
   <section>
