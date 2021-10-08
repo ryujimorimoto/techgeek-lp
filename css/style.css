@@ -99,6 +99,11 @@ body {
   }
 }
 
+/* 共通：section--container */
+.section__container {
+  padding: 5rem 0;
+}
+
 /* 共通：予約ボタン */
 .reserve-btn {
   width: 70%;
@@ -122,7 +127,6 @@ body {
   font-size: 3.2rem;
   text-align: center;
   margin-bottom: 4.8rem;
-  padding-top: 5rem;
 }
 
 .section__title::after {
@@ -139,12 +143,6 @@ body {
   .section__title::after {
     width: 8rem;
   }
-}
-
-/* 共通：黄色マーカー */
-.yellow-marker {
-  font-weight: bold;
-  background: linear-gradient(transparent 60%, #fff500 60%);
 }
 
 /* 共通：注釈 */
@@ -549,8 +547,8 @@ body {
 .about-description__text {
   width: 82%;
   margin: 0 auto;
-  padding-bottom: 6rem;
   line-height: 1.87;
+  padding: 1rem;
 }
 
 @media (min-width: 900px) {
@@ -561,10 +559,15 @@ body {
   }
 }
 
+/* テックギークとは（about-descrioption、about-details共通）：黄色マーカー */
+.yellow-marker {
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, #fff500 60%);
+}
+
 /* テックギークとは（about-details）:全体 */
 .about-details {
   background-color: #ffffff;
-  padding: 5rem 0;
 }
 
 .about-details--container {
@@ -619,18 +622,38 @@ body {
 /* (reason,question共通) :アコーディオン全体幅*/
 .accordion {
   width: 92%;
+  max-width: 1080px;
   margin: 0 auto;
 }
+
+@media (min-width: 590px) {
+  .accordion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
 
 /* (reason,question共通) :アコーディオンアイテム*/
 .accordion__item {
   background-color: #ffffff;
   box-shadow: 0px 8px 14px 8px #00000014;
-  margin-top: 40px;
   padding: 2rem 0;
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
+}
+
+.accordion > div:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 590px) {
+  .accordion__item {
+    width: 48%;
+  }
 }
 
 /* (reason,question共通) :アコーディオンアイテム：フレックスボックス指定*/
@@ -644,14 +667,27 @@ body {
 
 .accordion__text {
   width: 70%;
+  align-self: center;
+}
+
+@media (min-width: 590px) {
+  .accordion__text {
+    width: 80%;
+  }
 }
 
 /*  (reason,question共通) :アコーディオンタイトル*/
 .accordion__title {
   position: relative;
-  padding-bottom: 1.5rem;
+  padding-right: 4.5rem;
   font-weight: bold;
   font-size: 1.8rem;
+}
+
+@media (min-width: 590px) {
+  .accordion__title {
+    font-size: 2.4rem;
+  }
 }
 
 /*  (reason,question共通) :アコーディオンコンテンツ*/
@@ -668,18 +704,19 @@ body {
   opacity: 1;
   visibility: visible;
   transition: 0.3s;
+  padding-top: 1.5rem;
 }
 
-/*  (reason,question共通) :アコーディオン(+)ボタン*/
+/*  (reason,question共通) :アコーディオン(+)アイコン*/
 .accordion__title::before,
 .accordion__title::after {
   content: "";
   display: block;
   position: absolute;
-  right: 10px;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
+  right: 1rem;
+  top: 50%;
+  /* bottom: 0;
+  margin: auto 0; */
   background-color: #fe362f;
   width: 20px;
   height: 4px;
@@ -690,7 +727,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* (reason) :アコーディオン展開時(-)ボタン*/
+/* (reason) :アコーディオン展開時(-)アイコン*/
 .accordion__item.is-active .accordion__title::before {
   transform: rotate(180deg);
 }
@@ -716,4 +753,10 @@ body {
   line-height: 1.2;
   /* fontを読み込んでから適用 */
   /* font-family: 'Montserrat', sans-serif; */
+}
+
+/* (reason)：赤マーカー  */
+.red-marker {
+  font-weight: bold;
+  background: linear-gradient(transparent 65%, #FF836960 65%);
 }
