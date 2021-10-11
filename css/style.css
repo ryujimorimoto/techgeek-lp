@@ -631,15 +631,6 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 590px) {
-  .accordion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-}
-
 
 /* (reason,question共通) :アコーディオンアイテム*/
 .accordion__item {
@@ -653,12 +644,6 @@ body {
 
 .accordion > div:not(:last-child) {
   margin-bottom: 4rem;
-}
-
-@media (min-width: 590px) {
-  .accordion__item {
-    width: 48%;
-  }
 }
 
 /* (reason,question共通) :アコーディオンアイテム：フレックスボックス指定*/
@@ -720,8 +705,6 @@ body {
   position: absolute;
   right: 1rem;
   top: 50%;
-  /* bottom: 0;
-  margin: auto 0; */
   background-color: #fe362f;
   width: 20px;
   height: 4px;
@@ -760,4 +743,18 @@ body {
 .red-marker {
   font-weight: bold;
   background: linear-gradient(transparent 65%, #FF836960 65%);
+}
+
+/* (reason)：アコーディオンフレックス設定  */
+@media (min-width: 590px) {
+  .reason-accordion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .reason-accordion__item {
+    width: 48%;
+  }
 }
