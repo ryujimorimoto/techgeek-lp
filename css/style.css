@@ -10,6 +10,7 @@ h5,
 h6,
 p,
 ul,
+ol,
 figure {
   margin: 0;
   padding: 0;
@@ -31,7 +32,8 @@ a:hover {
   opacity: 0.8;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
@@ -89,9 +91,17 @@ body {
   display: none;
 }
 
+.sp-none-inline {
+  display: none;
+}
+
 @media (min-width: 900px) {
   .sp-none {
     display: block;
+  }
+
+  .sp-none-inline {
+    display: inline;
   }
 
   .pc-none {
@@ -120,6 +130,12 @@ body {
   .reserve-btn {
     width: 37%;
   }
+}
+
+/* 共通：予約ボタンwrapper(reserve-btn__wrapper) */
+.reserve-btn__wrapper {
+  background-color: #4e84ff;
+  padding: 3rem 0;
 }
 
 /* 共通：章タイトル */
@@ -815,5 +831,68 @@ body {
     font-size: 3.6rem;
     padding-right: 5rem;
   }
+}
+
+/* ----------------- 学習の流れ(learning) ------------ */
+/* (learning)全体レイアウト */
+.process__wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 590px) {
+  .process__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* (learning)番号とアイコンをabsoluteを使用して位置調整 */
+.process__item {
+  position: relative;
+}
+
+.process__header {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  top: -0.3rem;
+  left: 0;
+}
+
+/* (learning)番号 */
+.process__number {
+  color: #4E84FF;
+  margin-right: 0.5rem;
+  /* fontを読み込んでから適用
+  font-family: 'Montserrat', sans-serif; */
+}
+
+/* (learning)テキストの位置調整 */
+.process__text {
+  padding-left: 4rem;
+  margin-left: 4rem;
+}
+
+@media (min-width: 590px) {
+  .process__text {
+    padding-left: 8.7rem;
+  }
+}
+
+/* (learning)タイムラインの線 */
+.process li:not(:last-of-type) > .process__text {
+  border-left: 3px solid #4E84FF;
+  padding-bottom: 4rem;
+}
+
+/* (learning)画像 */
+.process__image {
+  width: 5rem;
+}
+
+.process__image img {
+  width: 100%;
 }
 

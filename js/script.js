@@ -1,4 +1,3 @@
-window.addEventListener("load", loaded => {
   /*--------------------------
   ナビゲーションメニュー開閉
   ----------------------------*/
@@ -16,6 +15,7 @@ window.addEventListener("load", loaded => {
   /*---------------------------------
   アコーディオンメニュー: 使用する関数の定義
   ----------------------------------*/
+  window.addEventListener("load", loaded => {
   [].slice.call(document.getElementsByClassName("js-accordion-trigger"))
     .map( elm => elm.addEventListener("click", () => {
         elm.classList.toggle("is-active");
