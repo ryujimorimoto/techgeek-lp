@@ -906,8 +906,34 @@ body {
   margin: 0 auto;
 }
 
-.services__list li:not(:last-of-type) {
-  margin-bottom: 1.5rem;
+@media (max-width: 899px) {
+  .services__list li:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 590px) {
+  .services__list {
+    width: 76%;
+  }
+}
+
+@media (min-width: 900px) {
+  .services__list {
+    justify-content: center;
+  }
+
+  .services__list li:first-child,
+  .services__list li:nth-child(2),
+  .services__list li:nth-child(3) {
+    margin-bottom: 3rem;
+  }
+
+  .services__list li:first-child,
+  .services__list li:nth-child(2),
+  .services__list li:nth-child(4) {
+    margin-right: 3rem;
+  }
 }
 
 /* (services) アイテム */
@@ -918,10 +944,14 @@ body {
   border-radius: 20px;
   box-sizing: border-box;
   box-shadow: 0px 5px 10px 3px #00000014;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: relative;
+}
+
+@media (min-width: 900px) {
+  .service__item {
+    width: 30%;
+    padding: 2.5rem 3rem;
+  }
 }
 
 /* (services) アイテム上部のカラー部分 */
@@ -957,6 +987,20 @@ body {
   background-color: #6F42FF;
 }
 
+@media (min-width: 590px) {
+  .service__item::before {
+    width: 7rem;
+    height: 0.8rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .service__item::before {
+    width: 10rem;
+    height: 1rem;
+  }
+}
+
 /* (services) アイテムテキスト */
 .service__title {
   font-size: 1.4rem;
@@ -966,32 +1010,38 @@ body {
   font-size: 1.2rem;
 }
 
+@media (min-width: 590px) {
+  .service__title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service__description {
+    font-size: 1.6rem;
+  }
+}
+
 /* (services) 最後のアイテムのみ高さ調整 */
-.services__list li:last-of-type {
-  padding-bottom: 3.7rem;
+@media (max-width: 539px) {
+  .services__list li:last-of-type {
+    padding-bottom: 3.4rem;
+  }
 }
 
 /* (services) 画像 */
 .service__image {
   margin: 0 auto 2.2rem;
+  height: 6.3rem;
+  text-align: center;
 }
 
-.service-1 img {
-  width: 8rem;
+.service__image img {
+  height: 100%;
 }
 
-.service-2 img {
-  width: 9.9rem;
-}
-
-.service-3 img {
-  width: 9.1rem;
-}
-
-.service-4 img {
-  width: 7.2rem;
-}
-
-.service-5 img {
-  width: 10rem;
+@media (min-width: 540px) {
+  .service__image {
+    margin-bottom: 3rem;
+    height: 11rem;
+  }
 }
