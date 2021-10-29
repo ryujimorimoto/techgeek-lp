@@ -896,3 +896,102 @@ body {
   width: 100%;
 }
 
+/* サービス一覧 */
+/* (services) 全体 */
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.services__list li:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+/* (services) アイテム */
+.service__item {
+  width: 48.5%;
+  background-color: #FFFFFF;
+  padding: 1.4rem 1.5rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px 3px #00000014;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* (services) アイテム上部のカラー部分 */
+.service__item::before {
+  display: block;
+  content: '';
+  width: 4.5rem;
+  height: 0.5rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service-1::before {
+  background-color: #CCE6FF;
+}
+
+.service-2::before {
+  background-color: #42DEFF;
+}
+
+.service-3::before {
+  background-color: #3C9DE8;
+}
+
+.service-4::before {
+  background-color: #4E84FF;
+}
+
+.service-5::before {
+  background-color: #6F42FF;
+}
+
+/* (services) アイテムテキスト */
+.service__title {
+  font-size: 1.4rem;
+}
+
+.service__description {
+  font-size: 1.2rem;
+}
+
+/* (services) 最後のアイテムのみ高さ調整 */
+.services__list li:last-of-type {
+  padding-bottom: 3.7rem;
+}
+
+/* (services) 画像 */
+.service__image {
+  margin: 0 auto 2.2rem;
+}
+
+.service-1 img {
+  width: 8rem;
+}
+
+.service-2 img {
+  width: 9.9rem;
+}
+
+.service-3 img {
+  width: 9.1rem;
+}
+
+.service-4 img {
+  width: 7.2rem;
+}
+
+.service-5 img {
+  width: 10rem;
+}
