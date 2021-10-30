@@ -1049,13 +1049,59 @@ body {
 
 /* ---------------料金(price)--------------- */
 /* (price)全体 */
+.price-container {
+  width: 92%;
+}
+
+@media (min-width: 590px) {
+  .price-container {
+    width: 78%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* (price)コースタブ */
+.course-tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* (price)コース名 */
+.course__name {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+}
+
+@media (min-width: 590px) {
+  .course__name {
+    padding: 1rem 0;
+    width: 32%;
+  }
+}
+
+.light {
+  background-color: #3C9DE8;
+  border: 2px solid #3C9DE8;
+}
+
+.standard {
+  background-color: #4E84FF;
+  border: 2px solid #4E84FF;
+}
+
+.premium {
+  background-color: #284280;
+  border: 2px solid #284280;
+}
+
+/* (price)コースリスト */
 @media (min-width: 590px) {
   .course__list {
     display: flex;
     justify-content: space-between;
-    width: 78%;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -1064,6 +1110,9 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0 2rem;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic", sans-serif;
 }
 
 @media (min-width: 590px) {
@@ -1073,48 +1122,16 @@ body {
 }
 
 /* (price)course__item枠線 */
-.light-course .course__detail {
+.light-course {
   border: 2px solid #3C9DE8;
 }
 
-.standard-course .course__detail {
+.standard-course {
   border: 2px solid #4E84FF;
 }
 
-.premium-course .course__detail {
+.premium-course {
   border: 2px solid #284280;
-}
-
-/* (price)course__detail余白,フォント */
-.course__detail {
-  padding: 3rem 0 2rem;
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic", sans-serif;
-}
-
-/* (price)コース名 */
-.course__name {
-  color: #FFFFFF;
-  font-weight: normal;
-  font-size: 2.4rem;
-  border-radius: 12px 12px 0 0;
-}
-
-@media (min-width: 590px) {
-  .course__name {
-    padding: 1rem 0;
-  }
-}
-
-.light-course .course__name {
-  background-color: #3C9DE8;
-}
-
-.standard-course .course__name {
-  background-color: #4E84FF;
-}
-
-.premium-course .course__name {
-  background-color: #284280;
 }
 
 /* (price)コース期間 */
@@ -1172,9 +1189,38 @@ body {
   }
 }
 
+/* (price)コース説明箇条書きマーク */
+.description__list {
+  text-align: left;
+}
+
+.description__list li {
+  position: relative;
+  display: inline-block;
+  margin-left: 4rem;
+}
+
+.description__list li::before {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  content: '';
+  display: block;
+  position: absolute;
+  left: -1.2rem;
+  top: 1rem;
+  background-color: aqua;
+}
+
+/* (price)プレミアムコース注釈 */
+.description__annotation {
+  font-size: 1.5rem;
+  color: #808080;
+}
+
 /* (price)分割料金リンク */
 .price-link {
-  margin-top: auto;
+  margin-top: 4rem;
 }
 
 .price-link a {
