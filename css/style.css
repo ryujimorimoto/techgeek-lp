@@ -896,13 +896,14 @@ body {
   width: 100%;
 }
 
-/* サービス一覧 */
+/*--------------- サービス一覧(services) ---------------*/
 /* (services) 全体 */
 .services__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 92%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1045,3 +1046,143 @@ body {
     height: 11rem;
   }
 }
+
+/* ---------------料金(price)--------------- */
+/* (price)全体 */
+@media (min-width: 590px) {
+  .course__list {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* (price)course__item */
+.course__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 590px) {
+  .course__item {
+    width: 32%;
+  }
+}
+
+/* (price)course__item枠線 */
+.light-course .course__detail {
+  border: 2px solid #3C9DE8;
+}
+
+.standard-course .course__detail {
+  border: 2px solid #4E84FF;
+}
+
+.premium-course .course__detail {
+  border: 2px solid #284280;
+}
+
+/* (price)course__detail余白,フォント */
+.course__detail {
+  padding: 3rem 0 2rem;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic", sans-serif;
+}
+
+/* (price)コース名 */
+.course__name {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 2.4rem;
+  border-radius: 12px 12px 0 0;
+}
+
+@media (min-width: 590px) {
+  .course__name {
+    padding: 1rem 0;
+  }
+}
+
+.light-course .course__name {
+  background-color: #3C9DE8;
+}
+
+.standard-course .course__name {
+  background-color: #4E84FF;
+}
+
+.premium-course .course__name {
+  background-color: #284280;
+}
+
+/* (price)コース期間 */
+.course__period {
+  font-size: 2.4rem;
+  margin-bottom: 2.3rem;
+}
+
+.light-course .course__period {
+  color: #3C9DE8;
+}
+
+.standard-course .course__period {
+  color: #4E84FF;
+}
+
+.premium-course .course__period {
+  color: #284280;
+}
+
+/* (price)分割料金 */
+.course__price {
+  line-height: 3.2rem;
+}
+
+.course__split-money {
+  font-size: 3.2rem;
+}
+
+/* (price)分割料金注釈 */
+.course__annotation__wrapper {
+  line-height: 1.2rem;
+  margin-bottom: 3.8rem;
+}
+
+.course__annotation {
+  color: #888888;
+  font-size: 1.2rem;
+}
+
+/* (price)一括払い料金 */
+.course__one-time-money__wrapper {
+  margin-bottom: 3.3rem;
+}
+
+.course__one-time-money {
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+@media (min-width: 590px) {
+  .course__one-time-money {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+}
+
+/* (price)分割料金リンク */
+.price-link {
+  margin-top: auto;
+}
+
+.price-link a {
+  color: #719DFF;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+
+
+
