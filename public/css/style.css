@@ -1521,3 +1521,7 @@ section[class*="section--"] .container {
     padding: 2rem;
   }
 }
+.copyright {
+  text-align: center;
+  color: #fff;
+}
