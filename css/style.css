@@ -272,12 +272,16 @@ body {
     padding: 10%;
   }
 
-  .nav__item:not(:last-child) {
+  .nav__item:not(:nth-last-child(2)) {
     border-bottom: 1px solid #595757;
   }
 
-  .nav__item:last-child {
+  .nav__item:nth-last-child(2) {
     margin-top: 10rem;
+  }
+
+  .nav__item:last-child {
+    border-bottom: none;
   }
 
   .nav__item a {
