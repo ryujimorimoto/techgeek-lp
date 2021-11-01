@@ -168,7 +168,9 @@ body {
 }
 
 /* 共通：（なぜ、shopify?、サービス一覧、よくあるご質問）背景色 */
-.reason, .services, .questions {
+.reason,
+.services,
+.questions {
   background-color: #f2f3f6;
 }
 
@@ -647,7 +649,6 @@ body {
   margin: 0 auto;
 }
 
-
 /* (reason,question共通) :アコーディオンアイテム*/
 .accordion__item {
   background-color: #ffffff;
@@ -663,7 +664,7 @@ body {
 /* (reason,question共通) :アコーディオンアイテム：フレックスボックス指定*/
 .accordion__header {
   width: 10%;
-  color: #FE362F;
+  color: #fe362f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -749,7 +750,7 @@ body {
 /* (reason)：赤マーカー  */
 .red-marker {
   font-weight: bold;
-  background: linear-gradient(transparent 65%, #FF836960 65%);
+  background: linear-gradient(transparent 65%, #ff836960 65%);
 }
 
 /* (reason)：アコーディオンフレックス設定  */
@@ -806,18 +807,18 @@ body {
 .questions--a::before {
   display: block;
   padding-right: 2rem;
-  color: #FE362F;
+  color: #fe362f;
   font-size: 3rem;
   /* fontを読み込んでから適用
   font-family: 'Montserrat', sans-serif; */
 }
 
 .questions--q::before {
-  content: 'Q';
+  content: "Q";
 }
 
 .questions--a::before {
-  content: 'A';
+  content: "A";
 }
 
 .questions--q,
@@ -863,7 +864,7 @@ body {
 
 /* (learning)番号 */
 .process__number {
-  color: #4E84FF;
+  color: #4e84ff;
   margin-right: 0.5rem;
   /* fontを読み込んでから適用
   font-family: 'Montserrat', sans-serif; */
@@ -883,7 +884,7 @@ body {
 
 /* (learning)タイムラインの線 */
 .process li:not(:last-of-type) > .process__text {
-  border-left: 3px solid #4E84FF;
+  border-left: 3px solid #4e84ff;
   padding-bottom: 4rem;
 }
 
@@ -940,7 +941,7 @@ body {
 /* (services) アイテム */
 .service__item {
   width: 48.5%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 1.4rem 1.5rem;
   border-radius: 20px;
   box-sizing: border-box;
@@ -958,7 +959,7 @@ body {
 /* (services) アイテム上部のカラー部分 */
 .service__item::before {
   display: block;
-  content: '';
+  content: "";
   width: 4.5rem;
   height: 0.5rem;
   margin: 0 auto;
@@ -969,23 +970,23 @@ body {
 }
 
 .service-1::before {
-  background-color: #CCE6FF;
+  background-color: #cce6ff;
 }
 
 .service-2::before {
-  background-color: #42DEFF;
+  background-color: #42deff;
 }
 
 .service-3::before {
-  background-color: #3C9DE8;
+  background-color: #3c9de8;
 }
 
 .service-4::before {
-  background-color: #4E84FF;
+  background-color: #4e84ff;
 }
 
 .service-5::before {
-  background-color: #6F42FF;
+  background-color: #6f42ff;
 }
 
 @media (min-width: 590px) {
@@ -1016,7 +1017,7 @@ body {
     font-size: 2.4rem;
     margin-bottom: 1rem;
   }
-  
+
   .service__description {
     font-size: 1.6rem;
   }
@@ -1070,7 +1071,7 @@ body {
 
 /* (price)コース名全体 */
 .course__name {
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 12px 12px 0 0;
   text-align: center;
   padding: 1rem 0;
@@ -1095,13 +1096,13 @@ body {
 
 /* (price)各コース名 */
 .light {
-  background-color: #3C9DE8;
-  border: 2px solid #3C9DE8;
+  background-color: #3c9de8;
+  border: 2px solid #3c9de8;
 }
 
 .standard {
-  background-color: #4E84FF;
-  border: 2px solid #4E84FF;
+  background-color: #4e84ff;
+  border: 2px solid #4e84ff;
   position: relative;
 }
 
@@ -1167,11 +1168,11 @@ body {
 
 /* (price)course__item枠線 */
 .light-course {
-  border: 2px solid #3C9DE8;
+  border: 2px solid #3c9de8;
 }
 
 .standard-course {
-  border: 2px solid #4E84FF;
+  border: 2px solid #4e84ff;
 }
 
 .premium-course {
@@ -1188,20 +1189,20 @@ body {
   line-height: 4.7rem;
   border-radius: 50%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.3rem;
-  background-color: #FF8369;
+  background-color: #ff8369;
 }
 
 .balloon::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 0;
   height: 0;
   left: 1rem;
   bottom: -1rem;
-  border-right: 20px solid #FF8369;
+  border-right: 20px solid #ff8369;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   transform: rotate(-45deg);
@@ -1216,11 +1217,11 @@ body {
     line-height: 9rem;
     font-size: 2.4rem;
   }
-  
+
   .balloon::before {
     left: 3rem;
     bottom: -1.2rem;
-    border-right: 30px solid #FF8369;
+    border-right: 30px solid #ff8369;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
@@ -1233,11 +1234,11 @@ body {
 }
 
 .light-course .course__period {
-  color: #3C9DE8;
+  color: #3c9de8;
 }
 
 .standard-course .course__period {
-  color: #4E84FF;
+  color: #4e84ff;
 }
 
 .premium-course .course__period {
@@ -1307,7 +1308,7 @@ body {
   border-radius: 50%;
   width: 6px;
   height: 6px;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: -1.2rem;
@@ -1315,11 +1316,11 @@ body {
 }
 
 .light-course .description__item::before {
-  background-color: #3C9DE8;
+  background-color: #3c9de8;
 }
 
 .standard-course .description__item::before {
-  background-color: #4E84FF;
+  background-color: #4e84ff;
 }
 
 .premium-course .description__item::before {
@@ -1337,7 +1338,6 @@ body {
   }
 }
 
-
 /* (price)プレミアムコース注釈 */
 .description__annotation {
   font-size: 1.5rem;
@@ -1350,7 +1350,7 @@ body {
 }
 
 .price-link a {
-  color: #719DFF;
+  color: #719dff;
   text-decoration: underline;
   font-size: 1.4rem;
 }
@@ -1358,7 +1358,8 @@ body {
 /* (price)返金保証 */
 .price__text {
   text-align: center;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .refund__wrapper {
@@ -1384,3 +1385,57 @@ body {
   }
 }
 
+/* footer スタイルエリア */
+.footer {
+  width: 92%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 590px) {
+  .footer__logo {
+    margin-bottom: 1rem;
+    max-width: 210px;
+  }
+  .footer__logo img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 589px) {
+  .footer__logo {
+    margin-bottom: 4rem;
+    max-width: 164px;
+  }
+  .footer__logo img {
+    width: 100%;
+  }
+}
+
+.footer--list {
+  color: #fff;
+  display: flex;
+}
+@media screen and (min-width: 590px) {
+  .footer--list {
+    max-width: 1080px;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 589px) {
+  .footer--list {
+    margin-bottom: 1.5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.footer--list .footer--item {
+  margin-bottom: 1.5rem;
+}
