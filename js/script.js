@@ -13,7 +13,7 @@
   }
 
   /*---------------------------------
-  アコーディオンメニュー: 使用する関数の定義
+  アコーディオンメニュー
   ----------------------------------*/
   window.addEventListener("load", loaded => {
   [].slice.call(document.getElementsByClassName("js-accordion-trigger"))
@@ -24,3 +24,22 @@
       )
     );
 });
+
+/*---------------------------------
+  コースタブ切り替え
+  ----------------------------------*/
+function tabSwitch(selectTab) {
+  document.getElementsByClassName('course-active')[0].classList.remove('course-active');
+  document.getElementsByClassName('course-show')[0].classList.remove('course-show');
+
+  if (selectTab == 'light') {
+    document.getElementById('light').classList.add('course-active');
+    document.getElementById('light-course').classList.add('course-show');
+  } else if (selectTab == 'standard') {
+    document.getElementById('standard').classList.add('course-active');
+    document.getElementById('standard-course').classList.add('course-show');
+  } else if (selectTab == 'premium') {
+    document.getElementById('premium').classList.add('course-active');
+    document.getElementById('premium-course').classList.add('course-show');
+  };
+};

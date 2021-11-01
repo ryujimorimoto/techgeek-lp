@@ -351,12 +351,12 @@
     <h2 class="section__title">料金</h2>
     <div class="price-container">
       <ul class="course-tab">
-        <li class="course__name light">ライト</li>
-        <li class="course__name standard">スタンダード<span class="balloon">おすすめ!</span></li>
-        <li class="course__name premium">プレミアム</li>
+        <li class="course__name light" id="light" onclick="tabSwitch('light')">ライト</li>
+        <li class="course__name standard course-active" id="standard" onclick="tabSwitch('standard')">スタンダード<span class="balloon">おすすめ!</span></li>
+        <li class="course__name premium" id="premium" onclick="tabSwitch('premium')">プレミアム</li>
       </ul>
       <div class="course__list">
-        <div class="course__item light-course">
+        <div class="course__item light-course" id="light-course">
           <div class="course__text">
             <p class="course__period">3ヶ月間コース</p>
             <p class="course__price"><span class="course__split-money">¥7,150</span>/月(税込)~</p>
@@ -371,7 +371,7 @@
           </div>
         </div>
 
-        <div class="course__item standard-course">
+        <div class="course__item standard-course course-show" id="standard-course">
           <div class="course__text">
             <p class="course__period">3ヶ月間コース</p>
             <p class="course__price"><span class="course__split-money">¥13,903</span>/月(税込)~</p>
@@ -392,7 +392,7 @@
           </div>
         </div>
 
-        <div class="course__item premium-course">
+        <div class="course__item premium-course" id="premium-course">
           <div class="course__text">
             <p class="course__period">6ヶ月間コース</p>
             <p class="course__price"><span class="course__split-money">¥22,244</span>/月(税込)~</p>

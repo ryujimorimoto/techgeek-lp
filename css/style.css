@@ -1118,12 +1118,63 @@ body {
 
 /* (price)タブ切り替え */
 @media (max-width: 589px) {
-  .course__name.is-active {
+  .course__name.course-active {
     width: 40%;
     padding: 1.8rem 0;
     font-size: 2rem;
     line-height: 2rem;
   }
+}
+
+/* (price)コースリスト */
+.course__list {
+  margin-bottom: 5rem;
+}
+@media (min-width: 590px) {
+  .course__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* (price)course__item */
+.course__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0 2rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 590px) {
+  .course__item {
+    width: 32%;
+  }
+}
+
+/* (price)コース表示切り替え */
+@media (max-width: 589px) {
+  .course__item {
+    display: none;
+  }
+
+  .course__item.course-show {
+    display: flex;
+  }
+}
+
+/* (price)course__item枠線 */
+.light-course {
+  border: 2px solid #3C9DE8;
+}
+
+.standard-course {
+  border: 2px solid #4E84FF;
+}
+
+.premium-course {
+  border: 2px solid #284280;
 }
 
 /* (price)吹き出し */
@@ -1205,44 +1256,7 @@ body {
   border-bottom: 20px solid transparent;
 } */
 
-/* (price)コースリスト */
-.course__list {
-  margin-bottom: 5rem;
-}
-@media (min-width: 590px) {
-  .course__list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
-/* (price)course__item */
-.course__item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3rem 0 2rem;
-}
-
-@media (min-width: 590px) {
-  .course__item {
-    width: 32%;
-  }
-}
-
-/* (price)course__item枠線 */
-.light-course {
-  border: 2px solid #3C9DE8;
-}
-
-.standard-course {
-  border: 2px solid #4E84FF;
-}
-
-.premium-course {
-  border: 2px solid #284280;
-}
 
 /* (price)コース期間 */
 .course__period {
