@@ -1121,7 +1121,7 @@ body {
   .course__name.course-active {
     width: 40%;
     padding: 1.8rem 0;
-    font-size: 2rem;
+    font-size: 1.92rem;
     line-height: 2rem;
   }
 }
@@ -1130,6 +1130,7 @@ body {
 .course__list {
   margin-bottom: 5rem;
 }
+
 @media (min-width: 590px) {
   .course__list {
     display: flex;
@@ -1208,7 +1209,7 @@ body {
 
 @media (min-width: 590px) {
   .balloon {
-    top: -15rem;
+    top: -8rem;
     right: -5rem;
     width: 15rem;
     height: 9rem;
@@ -1224,39 +1225,6 @@ body {
     border-bottom: 10px solid transparent;
   }
 }
-/* .balloon::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  transform: rotate(-135deg);
-  left: 0;
-  bottom: -1.6rem;
-  border-left: 5rem solid #FF8369;
-  border-top: 5rem solid transparent;
-  border-right: 5rem solid transparent;
-  border-bottom: 5rem solid transparent;
-}
-
-.balloon::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  transform: rotate(-135deg);
-  left: 1rem;
-  bottom: -1.9rem;
-  border-left: 20px solid #FFFFFF;
-  border-top: 20px solid #FFFFFF;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-} */
-
-
 
 /* (price)コース期間 */
 .course__period {
@@ -1313,6 +1281,18 @@ body {
   }
 }
 
+/* (price)分割払い追加時は削除ここから */
+.course__money__wrapper {
+  margin-bottom: 3.8rem;
+}
+
+.course__money {
+  font-size: 3.2rem;
+  margin-right: 1rem;
+}
+
+/* (price)分割払い追加時は削除ここまで */
+
 /* (price)コース説明箇条書きマーク */
 .description__list {
   text-align: left;
@@ -1345,6 +1325,18 @@ body {
 .premium-course .description__item::before {
   background-color: #284280;
 }
+
+/* (price)sp表示の際、コースアイテムの高さを合わせるために調整 */
+@media (max-width: 589px) {
+  .light-course .description__list {
+    padding-bottom: 16.2rem;
+  }
+
+  .premium-course .description__list {
+    padding-bottom: 8.1rem;
+  }
+}
+
 
 /* (price)プレミアムコース注釈 */
 .description__annotation {

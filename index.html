@@ -29,7 +29,7 @@
           <li class="nav__item"><a href="#reason" onclick="closeNav()">なぜShopify?</a></li>
           <li class="nav__item"><a href="#learning" onclick="closeNav()">学習の流れ</a></li>
           <li class="nav__item"><a href="#services" onclick="closeNav()">サービス一覧</a></li>
-          <li class="nav__item"><a href="#fees" onclick="closeNav()">料金</a></li>
+          <li class="nav__item"><a href="#price" onclick="closeNav()">料金</a></li>
           <li class="nav__item"><a href="#questions" onclick="closeNav()">よくあるご質問</a></li>
           <li class="nav__item"><a href="#" class="header__btn tb-none" onclick="closeNav()">無料カウンセリングを予約</a></li>
           <li class="nav__item"><a href="#" class="header__btn tb-only" onclick="closeNav()">無料予約</a></li>
@@ -294,51 +294,40 @@
         <div class="service__image">
           <img src="images/service-1.svg" alt="">
         </div>
-        <div class="service__text">
-          <h3 class="service__title">わかりやすい教材</h3>
-          <p class="service__description">初心者でもわかりやすいカリキュラムで質の高い学習をサポート</p>
-        </div>
+        <h3 class="service__title">わかりやすい教材</h3>
+        <p class="service__description">初心者でもわかりやすいカリキュラムで質の高い学習をサポート</p>
       </li>
 
       <li class="service__item service-2">
         <div class="service__image">
           <img src="images/service-2.svg" alt="">
         </div>
-        <!-- service__textは使用しなければ削除 -->
-        <div class="service__text">
-          <h3 class="service__title">毎週のメンタリング</h3>
-          <p class="service__description">現役のShopifyエンジニアが担当メンターとして毎週メンタリング</p>
-        </div>
+        <h3 class="service__title">毎週のメンタリング</h3>
+        <p class="service__description">現役のShopifyエンジニアが担当メンターとして毎週メンタリング</p>
       </li>
 
       <li class="service__item service-3">
         <div class="service__image">
           <img src="images/service-3.svg" alt="">
         </div>
-        <div class="service__text">
-          <h3 class="service__title">24時間質問OK</h3>
-          <p class="service__description">技術的な疑問は、質問掲示板またはSlackで24時間いつでも質問OK</p>
-        </div>
+        <h3 class="service__title">24時間質問OK</h3>
+        <p class="service__description">技術的な疑問は、質問掲示板またはSlackで24時間いつでも質問OK</p>
       </li>
 
       <li class="service__item service-4">
         <div class="service__image">
           <img src="images/service-4.svg" alt="">
         </div>
-        <div class="service__text">
-          <h3 class="service__title">試験による技術証明</h3>
-          <p class="service__description">試験制度によるShopifyでのECサイト構築スキルの証明</p>
-        </div>
+        <h3 class="service__title">試験による技術証明</h3>
+        <p class="service__description">試験制度によるShopifyでのECサイト構築スキルの証明</p>
       </li>
 
       <li class="service__item service-5">
         <div class="service__image">
           <img src="images/service-5.svg" alt="">
         </div>
-        <div class="service__text">
-          <h3 class="service__title">キャリア相談</h3>
-          <p class="service__description">フリーランスや転職の相談・アドバイス</p>
-        </div>
+        <h3 class="service__title">キャリア相談</h3>
+        <p class="service__description">フリーランスや転職の相談・アドバイス</p>
       </li>
     </ul>
   </section>
@@ -352,31 +341,36 @@
     <div class="price-container">
       <ul class="course-tab">
         <li class="course__name light" id="light" onclick="tabSwitch('light')">ライト</li>
-        <li class="course__name standard course-active" id="standard" onclick="tabSwitch('standard')">スタンダード<span class="balloon">おすすめ!</span></li>
+        <li class="course__name standard course-active" id="standard" onclick="tabSwitch('standard')">スタンダード<span
+            class="balloon">おすすめ!</span></li>
         <li class="course__name premium" id="premium" onclick="tabSwitch('premium')">プレミアム</li>
       </ul>
       <div class="course__list">
         <div class="course__item light-course" id="light-course">
           <div class="course__text">
             <p class="course__period">3ヶ月間コース</p>
-            <p class="course__price"><span class="course__split-money">¥7,150</span>/月(税込)~</p>
+            <!-- 分割追加時コメント外す -->
+            <!-- <p class="course__price"><span class="course__split-money">¥7,150</span>/月(税込)~</p>
             <p class="course__annotation__wrapper"><small class="course__annotation">※36回分割を利用した場合</small></p>
-            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">198,000</span>円(税込)</p>
+            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">198,000</span>円(税込)</p> -->
+            <p class="course__money__wrapper"><span class="course__money">¥198,000</span>(税込)</p>
             <ul class="description__list">
               <li class="description__item">全てのカリキュラムを利用可能</li>
             </ul>
           </div>
-          <div class="price-link">
+          <!-- <div class="price-link">
             <a href="#">分割料金の一覧はこちら</a>
-          </div>
+          </div> -->
         </div>
 
         <div class="course__item standard-course course-show" id="standard-course">
           <div class="course__text">
             <p class="course__period">3ヶ月間コース</p>
-            <p class="course__price"><span class="course__split-money">¥13,903</span>/月(税込)~</p>
+            <!-- 分割追加時コメント外す -->
+            <!-- <p class="course__price"><span class="course__split-money">¥13,903</span>/月(税込)~</p>
             <p class="course__annotation__wrapper"><small class="course__annotation">※36回分割を利用した場合</small></p>
-            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">385,000</span>円(税込)</p>
+            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">385,000</span>円(税込)</p> -->
+            <p class="course__money__wrapper"><span class="course__money">¥385,000</span>(税込)</p>
             <ul class="description__list">
               <li class="description__item">全てのカリキュラムを利用可能</li>
               <li class="description__item">週一回のメンタリング</li>
@@ -387,31 +381,34 @@
               <li class="description__item">副業や転職相談が初回無料</li>
             </ul>
           </div>
-          <div class="price-link">
+          <!-- <div class="price-link">
             <a href="#">分割料金の一覧はこちら</a>
-          </div>
+          </div> -->
         </div>
 
         <div class="course__item premium-course" id="premium-course">
           <div class="course__text">
             <p class="course__period">6ヶ月間コース</p>
-            <p class="course__price"><span class="course__split-money">¥22,244</span>/月(税込)~</p>
+            <!-- 分割追加時コメント外す -->
+            <!-- <p class="course__price"><span class="course__split-money">¥22,244</span>/月(税込)~</p>
             <p class="course__annotation__wrapper"><small class="course__annotation">※36回分割を利用した場合</small></p>
-            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">616,000</span>円(税込)</p>
+            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">616,000</span>円(税込)</p> -->
+            <p class="course__money__wrapper"><span class="course__money">¥616,000</span>(税込)</p>
             <ul class="description__list">
               <li class="description__item">スタンダードコースの全て</li>
               <li class="description__item">試験の受講費用は全て無料</li>
               <li class="description__item">副業や転職相談が無制限<br><small class="description__annotation">※契約終了まで</small></li>
             </ul>
           </div>
-          <div class="price-link">
+          <!-- <div class="price-link">
             <a href="#">分割料金の一覧はこちら</a>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <div class="price__text">
-        <p class="refund__wrapper">安心の<span class="refund">14日間<br class="pc-none">全額返金保証！</span></p>
+        <p class="refund__wrapper"><span class="sp-none-inline">安心の</span><span class="refund">14日間<br
+              class="pc-none">全額返金保証！</span></p>
         <p>ご契約から14日以内であれば、<br class="pc-none">無条件で全額返金保証いたします。<br>学習を続けられるか不安な方も、<br>安心してお申し込みいただけます。</p>
       </div>
     </div>
