@@ -10,7 +10,7 @@
 
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/style.js"></script>
+  <script src="js/script.js" defer></script>
 
 
 </head>
@@ -25,12 +25,12 @@
       <a href="#" class="header__btn header__sp-btn pc-none">無料面談予約</a>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" onclick="closeNav()">テックギークとは</a></li>
-          <li class="nav__item"><a href="#" onclick="closeNav()">なぜShopify?</a></li>
-          <li class="nav__item"><a href="#" onclick="closeNav()">学習の流れ</a></li>
-          <li class="nav__item"><a href="#" onclick="closeNav()">サービス一覧</a></li>
-          <li class="nav__item"><a href="#" onclick="closeNav()">料金</a></li>
-          <li class="nav__item"><a href="#" onclick="closeNav()">よくあるご質問</a></li>
+          <li class="nav__item"><a href="#about" onclick="closeNav()">テックギークとは</a></li>
+          <li class="nav__item"><a href="#reason" onclick="closeNav()">なぜShopify?</a></li>
+          <li class="nav__item"><a href="#learning" onclick="closeNav()">学習の流れ</a></li>
+          <li class="nav__item"><a href="#services" onclick="closeNav()">サービス一覧</a></li>
+          <li class="nav__item"><a href="#fees" onclick="closeNav()">料金</a></li>
+          <li class="nav__item"><a href="#questions" onclick="closeNav()">よくあるご質問</a></li>
           <li class="nav__item"><a href="#" class="header__btn tb-none" onclick="closeNav()">無料カウンセリングを予約</a></li>
           <li class="nav__item"><a href="#" class="header__btn tb-only" onclick="closeNav()">無料予約</a></li>
         </ul>
@@ -79,7 +79,7 @@
     </div>
 
     <section id="about">
-      <div class="about-description">
+      <div class="about-description section__container">
         <div class="about-description__text">
           <h2 class="section__title">テックギークとは</h2>
           <p>テックギークとは、世界シェアNo.1のECプラットフォーム<br class="sp-none"><span
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <div class="about-details">
+      <div class="about-details section__container">
         <div class="about-details--container">
           <div class="about-details__contents">
             <div class="about-details__image about-details1">
@@ -129,24 +129,392 @@
     </section>
   </div>
 
-  <section id="reason" class="reason">
+  <section id="reason" class="reason section__container">
     <h2 class="section__title">なぜ、Shopify?</h2>
+    <dl class="accordion reason-accordion">
+      <div class="accordion__item reason-accordion__item js-accordion-trigger is-active">
+        <div class="accordion__header">
+          <p class="reason-header-text">理由</p>
+          <p class="reason-header-number">01</p>
+        </div>
+        <div class="accordion__text">
+          <dt class="accordion__title">ECサイト作成ツール<br><span class="red-marker">世界シェアNo.1</span></dt>
+          <dd class="accordion__content is-open">
+            ECプラットフォームのShopifyはご存知ですか？ECサイト構築ツールとしては世界シェアNo.1！アメリカのECサイト売上高はAmazonに次いで第2位なのがShopifyです。</dd>
+        </div>
+      </div>
+
+      <div class="accordion__item reason-accordion__item js-accordion-trigger">
+        <div class="accordion__header">
+          <p class="reason-header-text">理由</p>
+          <p class="reason-header-number">02</p>
+        </div>
+        <div class="accordion__text">
+          <dt class="accordion__title">EC市場規模は2010年から2019年で<span class="red-marker">約2.5倍</span>の19.4兆円</dt>
+          <dd class="accordion__content">2010年から2019年で市場規模が約2.5倍の19.4兆円になっています。新型コロナウイルスの影響もあり、さらなる市場の拡大が見込まれています。</dd>
+        </div>
+      </div>
+
+      <div class="accordion__item reason-accordion__item js-accordion-trigger">
+        <div class="accordion__header">
+          <p class="reason-header-text">理由</p>
+          <p class="reason-header-number">03</p>
+        </div>
+        <div class="accordion__text">
+          <dt class="accordion__title">日本向け機能が<span class="red-marker">充実</span><br class="sp-none">している！</dt>
+          <dd class="accordion__content">
+            これまで日本向け機能が少なかったShopifyですが、2018年から日本市場に力を入れ、機能が充実し、認知度が急速に広まっています。コロナ禍の影響もあり、ECサイトを新規構築する際にShopifyを検討する企業が増えています。
+          </dd>
+        </div>
+      </div>
+
+      <div class="accordion__item reason-accordion__item js-accordion-trigger">
+        <div class="accordion__header">
+          <p class="reason-header-text">理由</p>
+          <p class="reason-header-number">04</p>
+        </div>
+        <div class="accordion__text">
+          <dt class="accordion__title">Shopifyエンジニアは<br class="sp-none">少ないので<span class="red-marker">需要多！</span></dt>
+          <dd class="accordion__content">
+            Shopifyを構築するには独自の仕様を学習したり、Shopify独自言語Liquidを学習したりする必要があります。日本にはこれらを扱うことのできる事業者が多くありません。テックギークは、市場が伸び、競合が少ない今こそチャンスだと考えています。
+          </dd>
+        </div>
+      </div>
+
+      <div class="accordion__item reason-accordion__item js-accordion-trigger">
+        <div class="accordion__header">
+          <p class="reason-header-text">理由</p>
+          <p class="reason-header-number">05</p>
+        </div>
+        <div class="accordion__text">
+          <dt class="accordion__title"><span class="red-marker">価値の高い自分</span>に生まれ変わるなら、Shopifyエンジニア</dt>
+          <dd class="accordion__content">
+            市場価値を高めるには、大きな需要に対して少ない供給の業界で勝負する必要があります。テックギークは、Shopifyエンジニアになることこそが市場価値を高めることになると確信しています。私たちが、自分の価値を高めたい人を全力で支援しています。
+          </dd>
+        </div>
+      </div>
+    </dl>
   </section>
 
-  <section id="learning-process">
+  <div class="reserve-btn__wrapper">
+    <a href="#" class="reserve-btn">無料カウンセリングを予約</a>
+  </div>
+
+  <section id="learning" class="section__container">
     <h2 class="section__title">学習の流れ</h2>
+    <div class="process__wrapper">
+      <ol class="process">
+        <li class="process__item">
+          <div class="process__header">
+            <p class="process__number">1</p>
+            <div class="process__image">
+              <img src="images/icon-html.svg" alt="">
+            </div>
+          </div>
+          <div class="process__text">
+            <h3 class="process__title">HTML / CSS</h3>
+            <p class="process__description">ホームページ制作の基礎基本であるHTML / CSSのスキルを身につけます。</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <div class="process__header">
+            <p class="process__number">2</p>
+            <div class="process__image">
+              <img src="images/icon-shopify.svg" alt="">
+            </div>
+          </div>
+          <div class="process__text">
+            <h3 class="process__title">Shopifyのロゴ<br class="pc-none"><span class="sp-none-inline">・</span>Shopifyの使い方
+            </h3>
+            <p class="process__description">Shopifyの初期設定から、カスタマイズ方法、リリースまでの一連の操作を理解します。</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <div class="process__header">
+            <p class="process__number">3</p>
+            <div class="process__image">
+              <img src="images/icon-liquid.svg" alt="">
+            </div>
+          </div>
+          <div class="process__text">
+            <h3 class="process__title">Liquid</h3>
+            <p class="process__description">Shopify独自言語であるLiquidの基礎を理解し、使い方を身につけます。</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <div class="process__header">
+            <p class="process__number">4</p>
+            <div class="process__image">
+              <img src="images/icon-ec.svg" alt="">
+            </div>
+          </div>
+          <div class="process__text">
+            <h3 class="process__title">ECサイトを構築</h3>
+            <p class="process__description">HTML / CSS、Lipuid、Shopify基本機能などの身につけたスキルを使って、デモECサイトを構築します。</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <div class="process__header">
+            <p class="process__number">5</p>
+            <div class="process__image">
+              <img src="images/icon-portfolio.svg" alt="">
+            </div>
+          </div>
+          <div class="process__text">
+            <h3 class="process__title">ポートフォリオ作成</h3>
+            <p class="process__description">ご自身のアイディアをもとに、ECサイト構築をし、Shopifyへの理解を深め知識を定着させます。</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <div class="process__header">
+            <p class="process__number">6</p>
+            <div class="process__image">
+              <img src="images/icon-test.svg" alt="">
+            </div>
+          </div>
+          <div class="process__text">
+            <h3 class="process__title">課題と試験</h3>
+            <p class="process__description">ご自身のアイディアをもとに、ECサイト構築をし、Shopifyへの理解を深め知識を定着させます。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="services section__container">
     <h2 class="section__title">サービス一覧</h2>
+
+    <ul class="services__list">
+      <li class="service__item service-1">
+        <div class="service__image">
+          <img src="images/service-1.svg" alt="">
+        </div>
+        <div class="service__text">
+          <h3 class="service__title">わかりやすい教材</h3>
+          <p class="service__description">初心者でもわかりやすいカリキュラムで質の高い学習をサポート</p>
+        </div>
+      </li>
+
+      <li class="service__item service-2">
+        <div class="service__image">
+          <img src="images/service-2.svg" alt="">
+        </div>
+        <!-- service__textは使用しなければ削除 -->
+        <div class="service__text">
+          <h3 class="service__title">毎週のメンタリング</h3>
+          <p class="service__description">現役のShopifyエンジニアが担当メンターとして毎週メンタリング</p>
+        </div>
+      </li>
+
+      <li class="service__item service-3">
+        <div class="service__image">
+          <img src="images/service-3.svg" alt="">
+        </div>
+        <div class="service__text">
+          <h3 class="service__title">24時間質問OK</h3>
+          <p class="service__description">技術的な疑問は、質問掲示板またはSlackで24時間いつでも質問OK</p>
+        </div>
+      </li>
+
+      <li class="service__item service-4">
+        <div class="service__image">
+          <img src="images/service-4.svg" alt="">
+        </div>
+        <div class="service__text">
+          <h3 class="service__title">試験による技術証明</h3>
+          <p class="service__description">試験制度によるShopifyでのECサイト構築スキルの証明</p>
+        </div>
+      </li>
+
+      <li class="service__item service-5">
+        <div class="service__image">
+          <img src="images/service-5.svg" alt="">
+        </div>
+        <div class="service__text">
+          <h3 class="service__title">キャリア相談</h3>
+          <p class="service__description">フリーランスや転職の相談・アドバイス</p>
+        </div>
+      </li>
+    </ul>
   </section>
 
-  <section id="fees">
+  <div class="reserve-btn__wrapper">
+    <a href="#" class="reserve-btn">無料カウンセリングを予約</a>
+  </div>
+
+  <section id="price" class="section__container">
     <h2 class="section__title">料金</h2>
+    <div class="price-container">
+      <ul class="course-tab">
+        <li class="course__name light" id="light" onclick="tabSwitch('light')">ライト</li>
+        <li class="course__name standard course-active" id="standard" onclick="tabSwitch('standard')">スタンダード<span class="balloon">おすすめ!</span></li>
+        <li class="course__name premium" id="premium" onclick="tabSwitch('premium')">プレミアム</li>
+      </ul>
+      <div class="course__list">
+        <div class="course__item light-course" id="light-course">
+          <div class="course__text">
+            <p class="course__period">3ヶ月間コース</p>
+            <p class="course__price"><span class="course__split-money">¥7,150</span>/月(税込)~</p>
+            <p class="course__annotation__wrapper"><small class="course__annotation">※36回分割を利用した場合</small></p>
+            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">198,000</span>円(税込)</p>
+            <ul class="description__list">
+              <li class="description__item">全てのカリキュラムを利用可能</li>
+            </ul>
+          </div>
+          <div class="price-link">
+            <a href="#">分割料金の一覧はこちら</a>
+          </div>
+        </div>
+
+        <div class="course__item standard-course course-show" id="standard-course">
+          <div class="course__text">
+            <p class="course__period">3ヶ月間コース</p>
+            <p class="course__price"><span class="course__split-money">¥13,903</span>/月(税込)~</p>
+            <p class="course__annotation__wrapper"><small class="course__annotation">※36回分割を利用した場合</small></p>
+            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">385,000</span>円(税込)</p>
+            <ul class="description__list">
+              <li class="description__item">全てのカリキュラムを利用可能</li>
+              <li class="description__item">週一回のメンタリング</li>
+              <li class="description__item">課題のチェック</li>
+              <li class="description__item">質問掲示板の利用</li>
+              <li class="description__item">Slackによるリアルタイムの質問</li>
+              <li class="description__item">試験や受験費用が初回無料</li>
+              <li class="description__item">副業や転職相談が初回無料</li>
+            </ul>
+          </div>
+          <div class="price-link">
+            <a href="#">分割料金の一覧はこちら</a>
+          </div>
+        </div>
+
+        <div class="course__item premium-course" id="premium-course">
+          <div class="course__text">
+            <p class="course__period">6ヶ月間コース</p>
+            <p class="course__price"><span class="course__split-money">¥22,244</span>/月(税込)~</p>
+            <p class="course__annotation__wrapper"><small class="course__annotation">※36回分割を利用した場合</small></p>
+            <p class="course__one-time-money__wrapper">一括払い<span class="course__one-time-money">616,000</span>円(税込)</p>
+            <ul class="description__list">
+              <li class="description__item">スタンダードコースの全て</li>
+              <li class="description__item">試験の受講費用は全て無料</li>
+              <li class="description__item">副業や転職相談が無制限<br><small class="description__annotation">※契約終了まで</small></li>
+            </ul>
+          </div>
+          <div class="price-link">
+            <a href="#">分割料金の一覧はこちら</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="price__text">
+        <p class="refund__wrapper">安心の<span class="refund">14日間<br class="pc-none">全額返金保証！</span></p>
+        <p>ご契約から14日以内であれば、<br class="pc-none">無条件で全額返金保証いたします。<br>学習を続けられるか不安な方も、<br>安心してお申し込みいただけます。</p>
+      </div>
+    </div>
   </section>
 
-  <section id="questions">
+  <section id="questions" class="questions section__container">
     <h2 class="section__title">よくあるご質問</h2>
+    <dl class="accordion questions-accordion">
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>初心者でも大丈夫ですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>プログラミング未経験の方でも、パソコン操作ができる方であれば大丈夫です。テックギークの教材は、初心者の方にも理解できるように磨き上げました。わからないことは、気軽に相談できる担当メンター、質問掲示板、Slackチャットでのリアルタイム質問など数多くのサポートをご用意しています。ご安心して学習ください。
+        </dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>学習時間はどれくらい必要ですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>週に20時間以上が目安になります。平日2時間、土日に5時間の学習を想定していただけると良いかと思います。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>働きながら学習することは可能ですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>平日2時間、土日に5時間の学習時間を確保いただければ可能です。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>テックギークを卒業したら、どんなエンジニアになれますか？
+        </dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>Shopifyの構築をマスターできます。クライアントが求める高レベルなデザインも制作可能なエンジニアになれます。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>講義形式の授業ですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>自習形式のカリキュラムとなっております。週に一度、担当メンターとZoomでメンタリングを行えますので、ビデオ通話で疑問解消することもできます。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>どんな方がメンターですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>現役のフリーランスでShopify構築に精通したエンジニアがメンターとなります。厳選したエンジニアを採用しています。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>年齢制限はありますか？学生でも大丈夫ですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>学生でも、何歳の方でも受講いただけます。ご安心してご利用ください。ただし、未成年の方は、保護者の同意をお願いいたします。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>わからないことがあるときに、サポートを受けられますか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>サポートは、担当メンター、質問掲示板、Slackチャットで行っております。受講生の方がカリキュラムを理解できるよう様々なサービスを提供しておりますのでご安心ください。
+        </dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>学習を続けられるか不安です。</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>テックギークでは、挫折しない様々な仕組みを用意してあります。担当メンターに相談したり、受講生同士で励ましたり、運営が相談に乗ります。安心してご利用ください。
+        </dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>期間中に学習が終わらなかった場合、延長はできますか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>延長は可能です。延長料金は月額49,500円となります。質問掲示板とSlackチャットはご利用可能ですが、担当メンターは外れます。料金は全プラン共通となります。
+        </dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>フリーランスや転職の支援はありますか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>フリーランスの案件の獲得方法、転職活動のアドバイスを行っております。プランによってはサポート対象外のため、事前にご確認ください。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>事前に準備するものはありますか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>学習用パソコンはご自身でご用意ください。テックギークでは、Mac
+          Bookでのご利用を想定しています。また、メンタリングはビデオ通話アプリZoomを利用しますので事前にインストールをお願いいたします。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>分割払いは可能ですか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>3回、6回、12回、24回のプランをご用意しています。ただし、分割手数料はお客様負担となりますので、ご了承ください。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>途中で解約したい場合、返金はできますか？</dt>
+        <dd class="accordion__content questions__content"><span
+            class="questions--a"></span>ご契約後、14日以内であればご返金いたします。14日を過ぎてからのご返金はできかねますのでご了承ください。</dd>
+      </div>
+
+      <div class="accordion__item questions__item js-accordion-trigger">
+        <dt class="accordion__title questions__title"><span class="questions--q"></span>領収書をもらうことは可能ですか？</dt>
+        <dd class="accordion__content questions__content"><span class="questions--a"></span>運営にご連絡いただければ領収書を発行します。</dd>
+      </div>
+    </dl>
   </section>
 
 
