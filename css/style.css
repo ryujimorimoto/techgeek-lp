@@ -272,12 +272,16 @@ body {
     padding: 10%;
   }
 
-  .nav__item:not(:last-child) {
+  .nav__item:not(:nth-last-child(2)) {
     border-bottom: 1px solid #595757;
   }
 
-  .nav__item:last-child {
+  .nav__item:nth-last-child(2) {
     margin-top: 10rem;
+  }
+
+  .nav__item:last-child {
+    border-bottom: none;
   }
 
   .nav__item a {
@@ -1054,7 +1058,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 590px) {
+@media (min-width: 1030px) {
   .price-container {
     width: 78%;
     max-width: 1200px;
@@ -1079,13 +1083,13 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 589px) {
+@media (max-width: 749px) {
   .course__name {
     line-height: 1.6rem;
   }
 }
 
-@media (min-width: 590px) {
+@media (min-width: 750px) {
   .course__name {
     padding: 1rem 0;
     width: 32%;
@@ -1110,18 +1114,18 @@ body {
   border: 2px solid #284280;
 }
 
-@media (max-width: 589px) {
+@media (max-width: 749px) {
   .light {
     font-size: 1.6rem;
   }
 }
 
 /* (price)タブ切り替え */
-@media (max-width: 589px) {
+@media (max-width: 749px) {
   .course__name.course-active {
     width: 40%;
     padding: 1.8rem 0;
-    font-size: 2rem;
+    font-size: 1.92rem;
     line-height: 2rem;
   }
 }
@@ -1130,7 +1134,8 @@ body {
 .course__list {
   margin-bottom: 5rem;
 }
-@media (min-width: 590px) {
+
+@media (min-width: 750px) {
   .course__list {
     display: flex;
     justify-content: space-between;
@@ -1147,14 +1152,14 @@ body {
   box-sizing: border-box;
 }
 
-@media (min-width: 590px) {
+@media (min-width: 750px) {
   .course__item {
     width: 32%;
   }
 }
 
 /* (price)コース表示切り替え */
-@media (max-width: 589px) {
+@media (max-width: 749px) {
   .course__item {
     display: none;
   }
@@ -1206,9 +1211,9 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (min-width: 590px) {
+@media (min-width: 750px) {
   .balloon {
-    top: -15rem;
+    top: -8rem;
     right: -5rem;
     width: 15rem;
     height: 9rem;
@@ -1224,39 +1229,6 @@ body {
     border-bottom: 10px solid transparent;
   }
 }
-/* .balloon::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  transform: rotate(-135deg);
-  left: 0;
-  bottom: -1.6rem;
-  border-left: 5rem solid #FF8369;
-  border-top: 5rem solid transparent;
-  border-right: 5rem solid transparent;
-  border-bottom: 5rem solid transparent;
-}
-
-.balloon::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  transform: rotate(-135deg);
-  left: 1rem;
-  bottom: -1.9rem;
-  border-left: 20px solid #FFFFFF;
-  border-top: 20px solid #FFFFFF;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-} */
-
-
 
 /* (price)コース期間 */
 .course__period {
@@ -1306,12 +1278,23 @@ body {
   margin: 0 0.5rem;
 }
 
-@media (min-width: 590px) {
+@media (min-width: 750px) {
   .course__one-time-money {
     font-size: 2rem;
     font-weight: normal;
   }
 }
+
+/* (price)分割払い追加時は削除ここから */
+.course__money__wrapper {
+  margin-bottom: 3.8rem;
+}
+
+.course__money {
+  font-size: 3.2rem;
+  margin-right: 1rem;
+}
+/* (price)分割払い追加時は削除ここまで */
 
 /* (price)コース説明箇条書きマーク */
 .description__list {
@@ -1345,6 +1328,25 @@ body {
 .premium-course .description__item::before {
   background-color: #284280;
 }
+
+/* (price)ipadサイズのみ、コース説明箇条書きマークの位置調整 */
+@media (min-width: 750px) and (max-width: 1000px) {
+  .description__item {
+    margin-left: 1.5rem;
+  }
+}
+
+/* (price)sp表示の際、コースアイテムの高さを合わせるために調整 */
+@media (max-width: 749px) {
+  .light-course .description__list {
+    padding-bottom: 16.2rem;
+  }
+
+  .premium-course .description__list {
+    padding-bottom: 8.1rem;
+  }
+}
+
 
 /* (price)プレミアムコース注釈 */
 .description__annotation {
