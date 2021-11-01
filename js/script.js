@@ -12,15 +12,30 @@ function closeNav() {
   document.getElementById('modal-gray').classList.toggle('modal-open');
 }
 
-/*---------------------------------
+// ページ読み込み時の処理（ページ内スムーススクロールとアコーディオンメニューで使用）
+window.addEventListener('DOMContentLoaded', () => {
+  /*---------------------------------
 （header）ページ内スムーススクロール
 ----------------------------------*/
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  const anchouLinksArr = Array.prototype.slice.call(anchorLinks);
 
+  anchouLinksArr.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.hash;
+      const targetElement = document.querySelector(targetId);
+      const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
+      window.scrollTo({
+        top: targetOffsetTop,
+        behavior: "smooth"
+      });
+    });
+  });
 
 /*----------------------------------------------
 (なぜ、shopify?)(よくあるご質問)アコーディオンメニュー
 -----------------------------------------------*/
-window.addEventListener("load", loaded => {
 [].slice.call(document.getElementsByClassName("js-accordion-trigger"))
   .map( elm => elm.addEventListener("click", () => {
       elm.classList.toggle("is-active");
