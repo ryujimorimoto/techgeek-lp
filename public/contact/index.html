@@ -10,8 +10,15 @@
 
   <link rel="icon" href="../images/favicon.png" type="image/png">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact.css">
   <script src="../js/script.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 
+  <script>
+    function onSubmit(token) {
+      document.getElementById("techgeek-subscription-form").submit();
+    }
+  </script>
 </head>
 
 <body>
@@ -39,10 +46,51 @@
       </button>
     </div>
   </header>
+  <div class="contact-hero">
+    <img src="../images/contact-hero-pc.png" alt="お申し込み" class="contact-hero__pc-img">
+    <img src="../images/contact-hero-sp.png" alt="お申し込み" class="contact-hero__sp-img">
+  </div>
+  <main class="subscription-area">
+    <div class="appliciate-sp">お申し込み</div>
+    <div class="form-area">
+      <div class="form-content">
+        <div class="form-description">
+          <p>Webアプリを使ったビデオ通話でカウンセリングを行います。パソコン、スマートフォンのどちらからでもご利用可能です。</p>
+        </div>
+        <div class="form-body">
+          <form action="/" method="post" enctype="multipart/form-data" id="techgeek-subscription-form">
+            <div class="form-input">
+              <label for="form-name">お名前</label>
+              <span class="form-require">必須</span>
+            </div>
+            <input type="text" name="name" id="form-name" placeholder="お名前" required autofocus autocomplete="name">
+            <div class="form-input">
+              <label for="form-name-kana">フリガナ</label>
+              <span class="form-require">必須</span>
+            </div>
+            <input type="text" name="name-kana" id="form-name-kana" placeholder="フリガナ" required
+              autocomplete="name-kana">
+            <div class="form-input">
+              <label for="form-email">メールアドレス</label>
+              <span class="form-require">必須</span>
+            </div>
+            <input type="text" name="email" id="form-email" placeholder="techgeek@gmail.com" required
+              autocomplete="email">
+            <div class="form-checkbox">
+              <p><input type="checkbox" checked name="privacy" id="check-privacy" required><a href="/privacy/"
+                  target="_blank" style="display: inline-block;">プライバシーポリシー</a>に同意の上お申し込みください</p>
+            </div>
 
+            <div class="form-submit">
+              <button class="g-recaptcha" data-sitekey="6LedKA8dAAAAAKGi_a4PH0RKg2QzgNo_rbmCzxvm"
+                data-callback='onSubmit' data-action='submit'>無料カウンセリングに申込む</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
-
-
+  </main>
   <footer id="footer-area">
     <div class="reserve-btn__wrapper">
       <div class="footer">
