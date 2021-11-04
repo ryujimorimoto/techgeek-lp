@@ -12,13 +12,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/contact.css">
   <script src="../js/script.js" defer></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 
-  <script>
-    function onSubmit(token) {
-      document.getElementById("techgeek-subscription-form").submit();
-    }
-  </script>
 </head>
 
 <body>
@@ -52,185 +46,217 @@
   </div>
   <main class="subscription-area">
     <div class="appliciate-sp">お申し込み</div>
-    <div id="tayori-form">
+    <!-- <link rel="stylesheet" href="../css/contact.css">
+<div class="form-area" id="tayori-form">
+  <div class="form-content">
+    <div class="form-description">
+      <p>Webアプリを使ったビデオ通話でカウンセリングを行います。パソコン、スマートフォンのどちらからでもご利用可能です。</p>
+    </div>
+    <div class="form-body">
       <form action="https://tayori.com/form_html/f2dbcb74654035a85d7bf8621e334befedeab56a/" method="post"
-        enctype="multipart/form-data">
+        enctype="multipart/form-data" id="techgeek-subscription-form">
         <div class="parts-error-message"></div>
-        <div class="form-parts" id="8fcfa56cecd7dee876fdd9e5be0b76fa79fc9ba4">
-          <div>
-            お名前
-          </div>
-          <div>
-            <input type="text" id="0fa5f4a15281ca54e6f6cd7aadf9dd83beaba6a8"
-              name="form_answers[parts][8fcfa56cecd7dee876fdd9e5be0b76fa79fc9ba4][0fa5f4a15281ca54e6f6cd7aadf9dd83beaba6a8]"
-              placeholder="お名前を入力してください" />
-            <div class="error-message"></div>
-          </div>
-        </div>
-        <div class="form-parts" id="1f35710a18887bbeea862c2d15daa99be6d6649a">
-          <div>
-            お名前カナ
-          </div>
-          <div>
-            <input type="text" id="906ed8301d546c7be67faeddeb72c898692ee313"
-              name="form_answers[parts][1f35710a18887bbeea862c2d15daa99be6d6649a][906ed8301d546c7be67faeddeb72c898692ee313]"
-              placeholder="お名前カナを入力してください" />
-            <div class="error-message"></div>
-          </div>
-        </div>
-        <div class="form-parts" id="05f658ca30ec7e3ab57ad44d647128faa9fd859e">
-          <div>
-            メールアドレス
-          </div>
-          <div>
-            <input type="email" id="89e81c3ee9c6c7415656c384d8a20744ef9a59f4"
-              name="form_answers[parts][05f658ca30ec7e3ab57ad44d647128faa9fd859e][89e81c3ee9c6c7415656c384d8a20744ef9a59f4]"
-              placeholder="メールアドレスを入力してください" />
-            <div class="error-message"></div>
-          </div>
-        </div>
-        <div class="form-parts" id="8e429acdae9ec79dfe01a3dedac280a00e96997e">
-          <div>
-            年代
-          </div>
-          <div>
-            <select id="3235b2027e2e676c3445649902ded70e8c3cd6d2"
-              name="form_answers[parts][8e429acdae9ec79dfe01a3dedac280a00e96997e][3235b2027e2e676c3445649902ded70e8c3cd6d2]">
-              <option value="学生（社会人以外の方）">
-                学生（社会人以外の方）
-              </option>
-              <option value="10代">
-                10代
-              </option>
-              <option value="20代">
-                20代
-              </option>
-              <option value="30代">
-                30代
-              </option>
-              <option value="40代">
-                40代
-              </option>
-              <option value="50代以上">
-                50代以上
-              </option>
-            </select>
-            <div class="error-message"></div>
-          </div>
-        </div>
-        <div class="form-parts" id="90c2973ce32da50a5ea4c203afc35285f0b7f46f">
-          <div>
-            利用規約
-          </div>
-          <div>
+        <div class="form-parts">
 
+          <div class="form-input" id="8afa68d351f0456d4e34175a2b3954bd6743f1cf">
+            <label for="form-name">お名前</label>
+            <span class="form-require">必須</span>
+          </div>
+          <input type="text"
+            name="form_answers[parts][8afa68d351f0456d4e34175a2b3954bd6743f1cf][acb311a1794405ad9da5d3d061bc3bba1931abe4]"
+            id="form-name acb311a1794405ad9da5d3d061bc3bba1931abe4" placeholder="お名前" required autofocus
+            autocomplete="name">
+          <div class="error-message"></div>
+        </div>
+
+        <div class="form-parts">
+          <div class="form-input" id="7cc8ddd2c8ea020debdbe0993fe3e46a126c4122">
+            <label for="form-name-kana">フリガナ</label>
+            <span class="form-require">必須</span>
+          </div>
+          <input type="text"
+            name="form_answers[parts][7cc8ddd2c8ea020debdbe0993fe3e46a126c4122][66bf0adf058d81ff3bb5897002bcd2af21d709f0]"
+            id="66bf0adf058d81ff3bb5897002bcd2af21d709f0" placeholder="フリガナ" required autocomplete="name-kana">
+
+          <div class="error-message"></div>
+        </div>
+
+        <div class="form-parts">
+
+          <div class="form-input" id="80be9e287debb967c66efe867f3c89b292ab291a">
+            <label for="form-email">メールアドレス</label>
+            <span class="form-require">必須</span>
+          </div>
+          <input type="text"
+            name="form_answers[parts][80be9e287debb967c66efe867f3c89b292ab291a][1f8f259a31e7cc3398c00139e3c89c432481fcdf]"
+            id="1f8f259a31e7cc3398c00139e3c89c432481fcdf" placeholder="techgeek@gmail.com" required
+            autocomplete="email">
+          <div class="error-message"></div>
+
+        </div>
+
+        <div class="form-parts">
+
+          <div class="form-input" id="74b417eb273927e930f284e535936951cd49c814">
+            <label>
+              年代
+            </label>
+          </div>
+          <div>
             <div>
-              <input type="checkbox" id="eb09e83aba83645c400817fcca7ef6619cd1483e"
-                name="form_answers[parts][90c2973ce32da50a5ea4c203afc35285f0b7f46f][eb09e83aba83645c400817fcca7ef6619cd1483e]"
-                value="1" /><label for="eb09e83aba83645c400817fcca7ef6619cd1483e">プライバシーポリシーに同意する</label>
+              <select class="form-select" id="8688333683798c84f9a66c59d139fd773f8fedb4"
+                name="form_answers[parts][74b417eb273927e930f284e535936951cd49c814][8688333683798c84f9a66c59d139fd773f8fedb4]">
+                <option value="学生（社会人以外の方）">
+                  学生（社会人以外の方）
+                </option>
+                <option value="10代">
+                  10代
+                </option>
+                <option value="20代">
+                  20代
+                </option>
+                <option value="30代">
+                  30代
+                </option>
+                <option value="40代">
+                  40代
+                </option>
+                <option value="50代以上">
+                  50代以上
+                </option>
+              </select>
               <div class="error-message"></div>
             </div>
           </div>
         </div>
-        <div>
-          <button class="submit" type="button">送信</button>
+
+
+        <div class="form-checkbox form-parts" id="abf17c97a2b744821eb3424850ad9e0dcf3b5f5b">
+          <input type="checkbox" id="58f337f1272b5650f2ddcadb1132beb596525557"
+            name="form_answers[parts][abf17c97a2b744821eb3424850ad9e0dcf3b5f5b][58f337f1272b5650f2ddcadb1132beb596525557]"
+            value="1" /><label for="58f337f1272b5650f2ddcadb1132beb596525557" style="font-size: 0.9rem;"><a
+              href="/privacy/" target="_blank" style="display: inline-block;">プライバシーポリシー</a>に同意する</label>
+          <div class="error-message"></div>
+        </div>
+
+        <div class="form-submit">
+          <button class="submit" type="button">無料カウンセリングに申込む</button>
         </div>
       </form>
+
       <script>
         (function (t, a, y, o, r, i) { r = a.createElement(y), i = a.getElementsByTagName(y)[0]; r.type = 'text/javascript'; r.async = 1; r.src = 'https://tayori.com/form_html/f2dbcb74654035a85d7bf8621e334befedeab56a//tag.js'; r.id = 'tayori-tag'; i.parentNode.insertBefore(r, i) })(window, document, 'script');
       </script>
     </div>
-    <!-- <div class="form-area" id="tayori-form">
-      <div class="form-content">
+  </div>
+</div> -->
+    <div class="form-area">
+
+      <div id="tayori-form" class="form-content ">
+
         <div class="form-description">
           <p>Webアプリを使ったビデオ通話でカウンセリングを行います。パソコン、スマートフォンのどちらからでもご利用可能です。</p>
         </div>
-        <div class="form-body">
-          <form action="https://tayori.com/form_html/f2dbcb74654035a85d7bf8621e334befedeab56a/" method="post"
-            enctype="multipart/form-data" id="techgeek-subscription-form">
-            <div class="parts-error-message"></div>
-
-            <div class="form-input form-parts" id="8fcfa56cecd7dee876fdd9e5be0b76fa79fc9ba4">
-              <label for="form-name">お名前</label>
-              <span class="form-require">必須</span>
+        <form action="https://tayori.com/form_html/f2dbcb74654035a85d7bf8621e334befedeab56a/" method="post"
+          enctype="multipart/form-data" class="form-body">
+          <div class="parts-error-message"></div>
+          <div class="form-parts" id="8afa68d351f0456d4e34175a2b3954bd6743f1cf">
+            <div class="form-label">
+              お名前
+              <span>必須</span>
             </div>
-            <input type="text"
-              name="form_answers[parts][8fcfa56cecd7dee876fdd9e5be0b76fa79fc9ba4][0fa5f4a15281ca54e6f6cd7aadf9dd83beaba6a8]"
-              id="form-name 0fa5f4a15281ca54e6f6cd7aadf9dd83beaba6a8" placeholder="お名前" required autofocus
-              autocomplete="name">
-            <div class="error-message"></div>
-
-            <div class="form-input form-parts" id="1f35710a18887bbeea862c2d15daa99be6d6649a">
-              <label for="form-name-kana">フリガナ</label>
-              <span class="form-require">必須</span>
+            <div>
+              <input type="text" id="acb311a1794405ad9da5d3d061bc3bba1931abe4"
+                name="form_answers[parts][8afa68d351f0456d4e34175a2b3954bd6743f1cf][acb311a1794405ad9da5d3d061bc3bba1931abe4]"
+                placeholder="お名前を入力してください" />
+              <div class="error-message"></div>
             </div>
-            <input type="text"
-              name="form_answers[parts][1f35710a18887bbeea862c2d15daa99be6d6649a][906ed8301d546c7be67faeddeb72c898692ee313]"
-              id="906ed8301d546c7be67faeddeb72c898692ee313" placeholder="フリガナ" required autocomplete="name-kana">
-
-            <div class="error-message"></div>
-            <div class="form-input form-parts" id="05f658ca30ec7e3ab57ad44d647128faa9fd859e">
-              <label for="form-email">メールアドレス</label>
-              <span class="form-require">必須</span>
+          </div>
+          <div class="form-parts" id="7cc8ddd2c8ea020debdbe0993fe3e46a126c4122">
+            <div class="form-label">
+              フリガナ
+              <span>必須</span>
             </div>
-            <input type="text"
-              name="form_answers[parts][05f658ca30ec7e3ab57ad44d647128faa9fd859e][89e81c3ee9c6c7415656c384d8a20744ef9a59f4]"
-              id="89e81c3ee9c6c7415656c384d8a20744ef9a59f4" placeholder="techgeek@gmail.com" required
-              autocomplete="email">
-            <div class="error-message"></div>
-            <div class="form-parts" id="8e429acdae9ec79dfe01a3dedac280a00e96997e">
-              <div>
-                年代
-              </div>
-              <div>
-                <select id="3235b2027e2e676c3445649902ded70e8c3cd6d2"
-                  name="form_answers[parts][8e429acdae9ec79dfe01a3dedac280a00e96997e][3235b2027e2e676c3445649902ded70e8c3cd6d2]">
-                  <option value="学生（社会人以外の方）">
-                    学生（社会人以外の方）
-                  </option>
-                  <option value="10代">
-                    10代
-                  </option>
-                  <option value="20代">
-                    20代
-                  </option>
-                  <option value="30代">
-                    30代
-                  </option>
-                  <option value="40代">
-                    40代
-                  </option>
-                  <option value="50代以上">
-                    50代以上
-                  </option>
-                </select>
+            <div>
+              <input type="text" id="66bf0adf058d81ff3bb5897002bcd2af21d709f0"
+                name="form_answers[parts][7cc8ddd2c8ea020debdbe0993fe3e46a126c4122][66bf0adf058d81ff3bb5897002bcd2af21d709f0]"
+                placeholder="お名前のフリガナを入力してください" />
+              <div class="error-message"></div>
+            </div>
+          </div>
+          <div class="form-parts" id="80be9e287debb967c66efe867f3c89b292ab291a">
+            <div class="form-label">
+              メールアドレス
+              <span>必須</span>
+            </div>
+            <div>
+              <input type="email" id="1f8f259a31e7cc3398c00139e3c89c432481fcdf"
+                name="form_answers[parts][80be9e287debb967c66efe867f3c89b292ab291a][1f8f259a31e7cc3398c00139e3c89c432481fcdf]"
+                placeholder="メールアドレスを入力してください" />
+              <div class="error-message"></div>
+            </div>
+          </div>
+          <div class="form-parts" id="74b417eb273927e930f284e535936951cd49c814">
+            <div class="form-label">
+              年代
+              <span>必須</span>
+            </div>
+            <div>
+              <select id="8688333683798c84f9a66c59d139fd773f8fedb4"
+                name="form_answers[parts][74b417eb273927e930f284e535936951cd49c814][8688333683798c84f9a66c59d139fd773f8fedb4]">
+                <option value="学生（社会人以外の方）">
+                  学生（社会人以外の方）
+                </option>
+                <option value="10代">
+                  10代
+                </option>
+                <option value="20代">
+                  20代
+                </option>
+                <option value="30代">
+                  30代
+                </option>
+                <option value="40代">
+                  40代
+                </option>
+                <option value="50代以上">
+                  50代以上
+                </option>
+              </select>
+              <div class="error-message"></div>
+            </div>
+          </div>
+          <div class="form-parts" id="abf17c97a2b744821eb3424850ad9e0dcf3b5f5b">
+
+            <div>
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="58f337f1272b5650f2ddcadb1132beb596525557"
+                  name="form_answers[parts][abf17c97a2b744821eb3424850ad9e0dcf3b5f5b][58f337f1272b5650f2ddcadb1132beb596525557]"
+                  value="1" checked /><label for="58f337f1272b5650f2ddcadb1132beb596525557">
+                  <a href="../privacy/" target="_blank" rel="noopener noreferrer"
+                    style="display: inline-block;">プライバシーポリシー</a>・
+                  <a href="../term/" target="_blank" rel="noopener noreferrer" style="display: inline-block;">利用規約</a>
+                  利用規約に同意する
+                </label>
                 <div class="error-message"></div>
               </div>
             </div>
-
-
-            <div class="form-checkbox form-parts" id="90c2973ce32da50a5ea4c203afc35285f0b7f46f">
-              <input type="checkbox" id="eb09e83aba83645c400817fcca7ef6619cd1483e"
-                name="form_answers[parts][90c2973ce32da50a5ea4c203afc35285f0b7f46f][eb09e83aba83645c400817fcca7ef6619cd1483e]"
-                value="1" /><label for="eb09e83aba83645c400817fcca7ef6619cd1483e"><a href="/privacy/" target="_blank"
-                  style="display: inline-block;">プライバシーポリシー</a>に同意する</label>
-              <div class="error-message"></div>
-            </div>
-
-            <div class="form-submit">
-      <button class="submit" type="button">送信</button>
-
-              <button class="g-recaptcha submit" type="button" data-sitekey="6LedKA8dAAAAAKGi_a4PH0RKg2QzgNo_rbmCzxvm"
-                data-callback='onSubmit' data-action='submit'>無料カウンセリングに申込む</button>
-            </div>
-          </form>
-
-          <script>
-            (function (t, a, y, o, r, i) { r = a.createElement(y), i = a.getElementsByTagName(y)[0]; r.type = 'text/javascript'; r.async = 1; r.src = 'https://tayori.com/form_html/f2dbcb74654035a85d7bf8621e334befedeab56a//tag.js'; r.id = 'tayori-tag'; i.parentNode.insertBefore(r, i) })(window, document, 'script');
-          </script>
-        </div>
+          </div>
+          <div class="form-submit">
+            <button class="submit" type="button">無料カウンセリングに申込む</button>
+          </div>
+        </form>
+        <script>
+          (function (t, a, y, o, r, i) { r = a.createElement(y), i = a.getElementsByTagName(y)[0]; r.type = 'text/javascript'; r.async = 1; r.src = 'https://tayori.com/form_html/f2dbcb74654035a85d7bf8621e334befedeab56a//tag.js'; r.id = 'tayori-tag'; i.parentNode.insertBefore(r, i) })(window, document, 'script');
+        </script>
       </div>
+      <!-- <iframe src="./_tayori.html"
+      style="width:100%;height:1300px;overflow:auto;-webkit-overflow-scrolling:touch;"></iframe> -->
+      <!-- <div style="width:100%;height:1300px;overflow:auto;-webkit-overflow-scrolling:touch;"><iframe
+        src="https://tayori.com/form/f2dbcb74654035a85d7bf8621e334befedeab56a/" width="100%" height="100%"></iframe>
     </div> -->
+    </div>
 
   </main>
   <footer id="footer-area">
