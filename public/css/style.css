@@ -390,6 +390,10 @@ body {
 }
 
 /* ヒーロー：テキスト */
+.hero__title {
+  font-size: 2.4rem;
+}
+
 .hero__text-wrapper {
   text-align: center;
 }
@@ -411,10 +415,11 @@ body {
   font-size: 1.8rem;
 }
 
-/* fontを読み込んでから適用 */
-/* .hero__text--shopify {
-  font-family: ;
-} */
+.hero__text--shopify {
+  font-size: 2.4rem;
+  /* fontを読み込んでから適用 */
+  /* font-family: ; */
+}
 
 @media (min-width: 590px) {
   .hero__title {
@@ -435,6 +440,10 @@ body {
 
   .hero__text--middle {
     font-size: 2.7rem;
+  }
+
+  .hero__text--shopify {
+    font-size: 3.6rem;
   }
 }
 
@@ -1550,4 +1559,46 @@ section[class*="section--"] .container {
 .copyright {
   text-align: center;
   color: #fff;
+}
+
+/* -------- thanksページ ------------ */
+/* (thanks)全体 */
+@media (min-width: 590px) {
+  .thanks {
+    display: flex;
+  }
+}
+
+/* (thanks)カード */
+.thanks__card {
+  background-color: #FDFFF8;
+  text-align: center;
+  padding-bottom: 1.7rem;
+}
+
+.thanks__container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.thanks__card-logo {
+  width: 42rem;
+  margin: 0 auto;
+}
+
+.card__img {
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* (thanks)メッセージ */
+.thanks__title {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+@media (min-width: 590px) {
+  .thanks__title {
+    font-size: 5.7rem;
+  }
 }
