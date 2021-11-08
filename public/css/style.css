@@ -396,6 +396,7 @@ body {
 
 .hero__text-wrapper {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .text90 {
@@ -420,6 +421,13 @@ body {
   font-family: acumin-pro, sans-serif;
   font-style: italic;
   margin-right: 0.5rem;
+  position: relative;
+}
+
+.hero__text--shopify img {
+  position: absolute;
+  bottom: -1rem;
+  left: -2rem;
 }
 
 @media (min-width: 590px) {
@@ -455,10 +463,6 @@ body {
 }
 
 /* ヒーロー：画像 */
-.hero__img--circle {
-  padding-left: 4rem;
-}
-
 .hero__img {
   width: 68%;
   margin: 0 auto;
@@ -480,17 +484,7 @@ body {
   width: 100%;
 }
 
-@media (min-width: 590px) {
-  .hero__img--circle {
-    padding-left: 18rem;
-  }
-}
-
 @media (min-width: 900px) {
-  .hero__img--circle {
-    padding-left: 0;
-  }
-
   .hero__img {
     width: 100%;
   }
@@ -758,7 +752,7 @@ body {
   font-size: 3.6rem;
   line-height: 1.2;
   /* fontを読み込んでから適用 */
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* (reason)：赤マーカー  */
@@ -823,8 +817,8 @@ body {
   padding-right: 2rem;
   color: #fe362f;
   font-size: 3rem;
-  /* fontを読み込んでから適用
-  font-family: 'Montserrat', sans-serif; */
+  /* fontを読み込んでから適用 */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .questions--q::before {
@@ -880,8 +874,8 @@ body {
 .process__number {
   color: #4e84ff;
   margin-right: 0.5rem;
-  /* fontを読み込んでから適用
-  font-family: 'Montserrat', sans-serif; */
+  /* fontを読み込んでから適用 */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* (learning)テキストの位置調整 */
@@ -1601,19 +1595,14 @@ section[class*="section--"] .container {
 }
 
 /* (thanks)カード画像 */
-.card__img--circle {
-  padding-left: 4rem;
-  text-align: left;
-}
-
 .card__img {
   width: 88%;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
 @media (min-width: 900px) {
-  .card__img--circle {
-    left: 5rem;
+  .card__img {
+    margin-top: 5rem;
   }
 }
 
@@ -1637,8 +1626,12 @@ section[class*="section--"] .container {
 }
 
 .thanks__image {
-  width: 26.5rem;
+  width: 95%;
   margin: 0 auto 3rem;
+}
+
+.thanks__image img {
+  width: 100%;
 }
 
 .thanks__message a {
@@ -1658,5 +1651,9 @@ section[class*="section--"] .container {
 
   .check-icon {
     width: 13rem;
+  }
+
+  .thanks__image {
+    width: 50rem;
   }
 }
