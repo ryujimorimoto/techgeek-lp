@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 /*----------------------------------------------
-(なぜ、shopify?)(よくあるご質問)アコーディオンメニュー
+(なぜ、Shopify?)(よくあるご質問)アコーディオンメニュー
 -----------------------------------------------*/
 [].slice.call(document.getElementsByClassName("js-accordion-trigger"))
   .map( elm => elm.addEventListener("click", () => {

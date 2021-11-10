@@ -167,7 +167,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* 共通：（なぜ、shopify?、サービス一覧、よくあるご質問）背景色 */
+/* 共通：（なぜ、Shopify?、サービス一覧、よくあるご質問）背景色 */
 .reason,
 .services,
 .questions {
@@ -737,7 +737,7 @@ body {
   opacity: 0;
 }
 
-/* ----------------- なぜ、shopify?(reason) ------------ */
+/* ----------------- なぜ、Shopify?(reason) ------------ */
 /* (reason) :理由見出し*/
 .reason-header-text {
   white-space: nowrap;
