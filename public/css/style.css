@@ -390,8 +390,13 @@ body {
 }
 
 /* ヒーロー：テキスト */
+.hero__title {
+  font-size: 2.4rem;
+}
+
 .hero__text-wrapper {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .text90 {
@@ -411,10 +416,19 @@ body {
   font-size: 1.8rem;
 }
 
-/* fontを読み込んでから適用 */
-/* .hero__text--shopify {
-  font-family: ;
-} */
+.hero__text--shopify {
+  font-size: 2.4rem;
+  font-family: acumin-pro, sans-serif;
+  font-style: italic;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.hero__text--shopify img {
+  position: absolute;
+  bottom: -1rem;
+  left: -2rem;
+}
 
 @media (min-width: 590px) {
   .hero__title {
@@ -436,6 +450,10 @@ body {
   .hero__text--middle {
     font-size: 2.7rem;
   }
+
+  .hero__text--shopify {
+    font-size: 3.6rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -445,10 +463,6 @@ body {
 }
 
 /* ヒーロー：画像 */
-.hero__img--circle {
-  padding-left: 4rem;
-}
-
 .hero__img {
   width: 68%;
   margin: 0 auto;
@@ -470,17 +484,7 @@ body {
   width: 100%;
 }
 
-@media (min-width: 590px) {
-  .hero__img--circle {
-    padding-left: 18rem;
-  }
-}
-
 @media (min-width: 900px) {
-  .hero__img--circle {
-    padding-left: 0;
-  }
-
   .hero__img {
     width: 100%;
   }
@@ -748,7 +752,7 @@ body {
   font-size: 3.6rem;
   line-height: 1.2;
   /* fontを読み込んでから適用 */
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* (reason)：赤マーカー  */
@@ -813,8 +817,8 @@ body {
   padding-right: 2rem;
   color: #fe362f;
   font-size: 3rem;
-  /* fontを読み込んでから適用
-  font-family: 'Montserrat', sans-serif; */
+  /* fontを読み込んでから適用 */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .questions--q::before {
@@ -870,8 +874,8 @@ body {
 .process__number {
   color: #4e84ff;
   margin-right: 0.5rem;
-  /* fontを読み込んでから適用
-  font-family: 'Montserrat', sans-serif; */
+  /* fontを読み込んでから適用 */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* (learning)テキストの位置調整 */
@@ -1550,4 +1554,106 @@ section[class*="section--"] .container {
 .copyright {
   text-align: center;
   color: #fff;
+}
+
+/* -------- thanksページ ------------ */
+.thanks__container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* (thanks)全体 */
+@media (min-width: 900px) {
+  .thanks {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .thanks__card,
+  .thanks__message {
+    width: 48%;
+  }
+}
+
+/* (thanks)カード */
+.thanks__card {
+  background-color: #FDFFF8;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media (min-width: 900px) {
+  .thanks__card {
+    border-radius: 30px;
+    box-shadow: 0px 8px 14px 8px #00000014;
+    padding: 5rem 0;
+  }
+}
+
+/* (thanks)カード画像 */
+.card__img {
+  width: 88%;
+  margin: 2rem auto 0;
+}
+
+@media (min-width: 900px) {
+  .card__img {
+    margin-top: 5rem;
+  }
+}
+
+/* (thanks)メッセージ */
+.thanks__message {
+  padding: 2rem 0;
+}
+
+.thanks__title {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.check-icon {
+  width: 9.5rem;
+  margin: 1rem auto 3.3rem;
+}
+
+.thanks__message-text p {
+  margin-bottom: 2.7rem;
+}
+
+.thanks__image {
+  width: 95%;
+  margin: 0 auto 3rem;
+}
+
+.thanks__image img {
+  width: 100%;
+}
+
+.thanks__message a {
+  color: #1943D0;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+@media (min-width: 590px) {
+  .thanks__message {
+    padding: 5rem 0;
+  }
+
+  .thanks__title {
+    font-size: 5.7rem;
+  }
+
+  .check-icon {
+    width: 13rem;
+  }
+
+  .thanks__image {
+    width: 50rem;
+  }
 }
