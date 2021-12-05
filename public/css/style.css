@@ -149,7 +149,7 @@ body {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 3rem;
+  width: 5rem;
   height: 1rem;
   background-color: #4584fb;
   border-radius: 50px;
@@ -500,6 +500,290 @@ body {
     margin-top: 4.3rem;
   }
 }
+/* ------------ キャンペーン ------------ */
+/* キャンペーン：全体 */
+.campain {
+  padding: 6rem 0;
+}
+.campain-banner {
+  margin: 0 auto;
+}
+
+.campain-banner img {
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .campain-banner {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 901px) {
+  .campain-banner {
+    width: 100%;
+  }
+}
+/* -------------- おすすめ ----------------- */
+.shopify-engineer {
+  background-color: #e6e6e6;
+  padding: 6rem 0;
+}
+.shopify-engineer__inner {
+  margin: auto;
+  max-width: 700px;
+  width: 85%;
+  border-radius: 20px;
+  background-color: #0020ff;
+  padding: 5rem;
+}
+@media screen and (max-width: 899px) {
+  .shopify-engineer__inner {
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+.shopify-engineer__lang {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 899px) {
+  .shopify-engineer__lang {
+    flex-direction: column;
+  }
+  .shopify-engineer__lang img {
+    padding: 1rem 5rem;
+    max-width: 70%;
+  }
+}
+.shopify-engineer__text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin: 1.5rem auto;
+  display: block;
+}
+.shopify-engineer__card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto 0rem;
+}
+.shopify-engineer__title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.shopify-logo {
+  max-width: 60px;
+  margin: 0 30px;
+}
+.shopify-logo img {
+  width: 100%;
+}
+.shopify-engineer--row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(64px);
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 899px) {
+  .shopify-engineer--row {
+    flex-direction: column;
+  }
+}
+.shopify-engineer--logo {
+  max-width: 50%;
+  margin: 3rem auto;
+  text-align: center;
+}
+.shopify-engineer--logo img {
+  width: 80%;
+}
+@media screen and (max-width: 899px) {
+  .shopify-engineer--logo {
+    max-width: 80%;
+  }
+}
+.shopify-engineer__list {
+  max-width: 330px;
+  width: 100%;
+  margin: 1rem auto;
+  line-height: 4rem;
+}
+@media screen and (max-width: 899px) {
+  .shopify-engineer__list {
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+
+/* ------- お悩み ------- */
+.worry {
+  padding: 6rem 0;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 899px) {
+  .worry {
+    padding: 3rem 0;
+    width: 90%;
+  }
+}
+.worry-title {
+  /* font-size: 2.4rem; */
+  margin-bottom: 6rem;
+  text-align: center;
+  /* color: #0020ff; */
+}
+@media screen and (max-width: 899px) {
+  .worry-title {
+    font-size: 1.6rem;
+  }
+}
+.worry-title span {
+  /* font-weight: 400; */
+  display: inline-block;
+}
+
+.worry-text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(64px);
+  transition: all 0.5s ease-in-out;
+}
+.worry-text p {
+  padding-bottom: 1rem;
+}
+.worry-text p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(110, 110, 110);
+  margin: 2rem 0;
+}
+/* ---- 需要 ---- */
+.demand-title {
+  /* font-size: 2.4rem; */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  /* color: #0020ff; */
+}
+@media screen and (max-width: 899px) {
+  .demand-title {
+    font-size: 1.6rem;
+  }
+}
+.demand-title span {
+  /* font-weight: 400; */
+  display: inline-block;
+}
+.demand-table {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 85%;
+  background-color: #ffffff;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+@media screen and (max-width: 899px) {
+  .demand-table {
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+.demand-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  box-shadow: 3px 3px 6px #b5b5b5;
+}
+@media screen and (max-width: 899px) {
+  .demand-table table {
+    font-size: 1.2rem;
+  }
+}
+.demand-table thead {
+  background-color: #0020ff;
+  color: #ffffff;
+}
+.demand-table th {
+  border: 1px solid #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+.demand-table tr {
+  border: 1px solid #3d3d3d;
+}
+.demand-table tr td:first-child {
+  text-align: left;
+}
+
+.demand-table td {
+  border: 1px solid #3d3d3d;
+  padding: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 899px) {
+  .demand-table td {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 899px) {
+  .demand-table tr td:last-child,
+  .demand-table tr th:last-child {
+    display: none;
+  }
+}
+.recommend-table {
+  background-color: #f9ffc6;
+}
+
+/* ------- メリット ------ */
+
+.benefit {
+  padding: 6rem 0;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 899px) {
+  .benefit {
+    padding: 3rem 0;
+    width: 90%;
+  }
+}
+.benefit-title {
+  /* font-size: 2.4rem; */
+  margin-bottom: 6rem;
+  text-align: center;
+  /* color: #0020ff; */
+}
+.benefit-title span {
+  /* font-weight: 400; */
+  display: inline-block;
+}
+.benefit-text .accordion {
+  width: 100%;
+  display: block;
+}
+.benefit-text .reason-accordion__item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.benefit-text .accordion__title::after,
+.benefit-text .accordion__title::before {
+  display: none;
+}
 
 /* -------------- テックギークとは ----------------- */
 /* テックギークとは:nextボタン */
@@ -752,7 +1036,7 @@ body {
   font-size: 3.6rem;
   line-height: 1.2;
   /* fontを読み込んでから適用 */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* (reason)：赤マーカー  */
@@ -818,7 +1102,7 @@ body {
   color: #fe362f;
   font-size: 3rem;
   /* fontを読み込んでから適用 */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .questions--q::before {
@@ -875,7 +1159,7 @@ body {
   color: #4e84ff;
   margin-right: 0.5rem;
   /* fontを読み込んでから適用 */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* (learning)テキストの位置調整 */
@@ -1180,7 +1464,7 @@ body {
 }
 
 .standard-course {
-  border: 2px solid #4e84ff;
+  /* border: 2px solid #4e84ff; */
 }
 
 .premium-course {
@@ -1325,7 +1609,15 @@ body {
 .light-course .description__item::before {
   background-color: #3c9de8;
 }
-
+.standard-course,
+.divided-course {
+  box-shadow: 3px 3px 6px #b8b8b8;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
 .standard-course .description__item::before {
   background-color: #4e84ff;
 }
@@ -1369,6 +1661,106 @@ body {
   font-size: 1.4rem;
 }
 
+/* 新しい料金 */
+.new_course__item {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 3.8rem auto;
+}
+@media screen and (max-width: 749px) {
+  .new_course__item {
+    flex-direction: column-reverse;
+  }
+}
+.new_course__period {
+  color: #4e84ff;
+  font-size: 2.4rem;
+  margin: 2.3rem auto;
+  text-align: center;
+}
+.new_course_price {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 749px) {
+  .new_course_price {
+    width: 100%;
+    text-align: center;
+  }
+}
+.new_course__one-time-money {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.new_course__divided {
+  display: flex;
+  align-items: center;
+  margin: 2.3rem auto;
+  justify-content: center;
+}
+@media screen and (max-width: 749px) {
+  .new_course__divided {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+.price-card {
+  margin: auto;
+  max-width: 400px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 5px 5px;
+}
+@media screen and (max-width: 749px) {
+  .price-card {
+    max-width: 90%;
+    margin-bottom: 2.3rem;
+    text-align: left;
+  }
+}
+.price-card-header {
+  border-radius: 15px 15px 0 0;
+  background-color: #4e84ff;
+  color: #fff;
+  text-align: center;
+  padding: 1.6rem;
+}
+.price-card-header h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.price-card-body {
+  padding: 1.6rem;
+}
+.price-card-body li {
+  list-style: decimal;
+  margin-left: 1.6rem;
+  padding-left: 1rem;
+}
+.divided-price-card-body {
+  text-align: center;
+  margin-top: 3rem;
+}
+.new__cource-currency {
+  font-size: 4rem;
+}
+@media screen and (max-width: 749px) {
+  .new__cource-currency {
+    font-size: 2.4rem;
+  }
+}
+.new__cource-money {
+  color: #284280;
+  font-size: 7rem;
+}
+@media screen and (max-width: 749px) {
+  .new__cource-money {
+    font-size: 5rem;
+  }
+}
 /* (price)返金保証 */
 .price__text {
   text-align: center;
@@ -1581,7 +1973,7 @@ section[class*="section--"] .container {
 
 /* (thanks)カード */
 .thanks__card {
-  background-color: #FDFFF8;
+  background-color: #fdfff8;
   text-align: center;
   padding: 2rem 0;
 }
@@ -1635,7 +2027,7 @@ section[class*="section--"] .container {
 }
 
 .thanks__message a {
-  color: #1943D0;
+  color: #1943d0;
   text-decoration: underline;
   word-wrap: break-word;
 }
@@ -1655,5 +2047,17 @@ section[class*="section--"] .container {
 
   .thanks__image {
     width: 50rem;
+  }
+}
+
+/* ------ アニメーション設定 ------ */
+
+.slideInDown {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media screen and (max-width: 899px) {
+  .section__title {
+    font-size: 2.4rem;
   }
 }
