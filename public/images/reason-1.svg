@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="319" height="360.933" viewBox="0 0 319 360.933">
+  <g id="グループ_4516" data-name="グループ 4516" transform="translate(3022.522 14235.139)">
+    <g id="長方形_52" data-name="長方形 52" transform="translate(-3022.522 -14036.586)" fill="#fff" stroke="#019ee3" stroke-width="1">
+      <rect width="88" height="135" stroke="none"/>
+      <rect x="0.5" y="0.5" width="87" height="134" fill="none"/>
+    </g>
+    <path id="合体_4" data-name="合体 4" d="M0,333V0H88V333Z" transform="translate(-2791.522 -14234.274)" fill="#019ee3"/>
+    <path id="合体_5" data-name="合体 5" d="M11.415,190.977l-.092.088.092-.088L0,180.093l11.415,10.884,11.415-10.884L11.415,190.977l.092.088ZM11.507.823v0Zm0-.736L.092,10.972,11.507.087,11.415,0l.091.087L11.6,0l-.091.087L22.922,10.972Z" transform="translate(-2991.66 -14231.081)" fill="none" stroke="#069ee2" stroke-width="6"/>
+    <g id="グループ_4515" data-name="グループ 4515" transform="translate(-2956.542 -14178.228)">
+      <text id="約" transform="translate(0.021 62.179)" fill="#019ee3" font-size="26" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">約</tspan></text>
+      <text id="倍" transform="translate(121.021 62.179)" fill="#019ee3" font-size="26" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">倍</tspan></text>
+      <text id="_2.5" data-name="2.5" transform="translate(28.021 62.179)" fill="#019ee3" font-size="62" font-family="Avenir-Black, Avenir" font-weight="800"><tspan x="0" y="0">2.5</tspan></text>
+    </g>
+    <g id="グループ_4514" data-name="グループ 4514" transform="translate(-2786.156 -14227.424)">
+      <text id="_19.4" data-name="19.4" transform="translate(-0.366 25.838)" fill="#fff" font-size="26" font-family="Avenir-Heavy, Avenir" font-weight="800"><tspan x="0" y="0">19.4</tspan></text>
+      <text id="兆円" transform="translate(57.634 27.838)" fill="#fff" font-size="10" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">兆円</tspan></text>
+    </g>
+    <g id="グループ_4513" data-name="グループ 4513" transform="translate(-3017.082 -14029.464)">
+      <text id="_7.76" data-name="7.76" transform="translate(-0.44 25.878)" fill="#069ee2" font-size="26" font-family="Avenir-Heavy, Avenir" font-weight="800"><tspan x="0" y="0">7.76</tspan></text>
+      <text id="兆円-2" data-name="兆円" transform="translate(58.56 27.878)" fill="#069ee2" font-size="10" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">兆円</tspan></text>
+    </g>
+    <text id="_2010年" data-name="2010年" transform="translate(-3001.665 -13883.509)" fill="#333" font-size="11" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="0" y="0">2010</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">年</tspan></text>
+    <text id="_2019年" data-name="2019年" transform="translate(-2785.023 -13880.206)" fill="#333" font-size="21" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="0" y="0">2019</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">年</tspan></text>
+    <line id="線_120" data-name="線 120" x2="142.14" transform="translate(-2934.022 -14035.635)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <line id="線_121" data-name="線 121" x2="188.631" transform="translate(-2980.153 -14234.274)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="473" height="248" viewBox="0 0 473 248">
+  <g id="グループ_4496" data-name="グループ 4496" transform="translate(-795.135 -7902)">
+    <g id="グループ_4485" data-name="グループ 4485" transform="translate(795.135 7915.432)">
+      <text id="_323" data-name="323" transform="translate(268 72.568)" fill="#069ee2" font-size="73" font-family="Avenir-Heavy, Avenir" font-weight="800"><tspan x="0" y="0">323</tspan></text>
+      <text id="_" data-name="%" transform="translate(398 68.568)" fill="#019ee3" font-size="37" font-family="Avenir-Heavy, Avenir" font-weight="800"><tspan x="0" y="0">%</tspan></text>
+      <rect id="長方形_604" data-name="長方形 604" width="259" height="69" transform="translate(0 11.568)" fill="#019ee3"/>
+      <g id="長方形_605" data-name="長方形 605" transform="translate(0 164.568)" fill="#fff" stroke="#069ee2" stroke-width="1">
+        <rect width="85" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="84" height="69" fill="none"/>
+      </g>
+      <line id="線_122" data-name="線 122" y1="86.668" x2="171.059" transform="translate(85.897 79.473)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+      <text id="増" transform="translate(433 74.568)" fill="#42638f" font-size="40" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">増</tspan></text>
+    </g>
+    <text id="_2020年" data-name="2020年" transform="translate(795.135 7919)" fill="#333" font-size="16" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="0" y="0">2020</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">年</tspan></text>
+    <text id="_2019年" data-name="2019年" transform="translate(795.135 8070)" fill="#333" font-size="10" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="0" y="0">2019</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">年</tspan></text>
+  </g>
+</svg>
