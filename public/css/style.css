@@ -2344,3 +2344,43 @@ aside {
 .reason-description {
   line-height: 32px;
 }
+
+.media {
+  margin: 3rem auto;
+}
+
+.media__container {
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.media__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .media__item {
+    flex-direction: column;
+  }
+}
+.media__item a {
+  color: -webkit-link;
+}
+
+.media__item a img {
+  max-width: 70%;
+  margin-right: 10%;
+  height: auto;
+}
+.media__item aside {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .media__item a img {
+    max-width: 100%;
+    margin-right: auto;
+  }
+}
