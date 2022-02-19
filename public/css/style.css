@@ -2356,9 +2356,10 @@ aside {
 }
 
 .media__item {
+  margin: 3rem 0;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 @media screen and (max-width: 900px) {
   .media__item {
@@ -2367,6 +2368,7 @@ aside {
 }
 .media__item a {
   color: -webkit-link;
+  flex-basis: 50%;
 }
 
 .media__item a img {
