@@ -2369,6 +2369,7 @@ aside {
 .media__item a {
   color: -webkit-link;
   flex-basis: 50%;
+  color: inherit;
 }
 
 .media__item a img {

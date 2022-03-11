@@ -65,20 +65,20 @@ function tabSwitch(selectTab) {
 };
 
 /* スクロールイベント処理 */
-window.addEventListener('scroll', () => {
-  /*---------------------------------
-  Shopifyエンジニアの特徴のスライドイン
-  ----------------------------------*/
-  const shopifyEngineer = document.querySelector('.shopify-engineer--row');
-  const shopifyEngineerHeight = shopifyEngineer.getBoundingClientRect().height;
-  const scrollTop = window.pageYOffset;
+// window.addEventListener('scroll', () => {
+//   /*---------------------------------
+//   Shopifyエンジニアの特徴のスライドイン
+//   ----------------------------------*/
+//   const shopifyEngineer = document.querySelector('.shopify-engineer--row');
+//   const shopifyEngineerHeight = shopifyEngineer.getBoundingClientRect().height;
+//   const scrollTop = window.pageYOffset;
 
-  if (scrollTop > shopifyEngineerHeight + 1100 && !shopifyEngineer.classList.contains('slideInDown')) {
-    shopifyEngineer.classList.add('slideInDown');
-  }
-  const worryText = document.querySelector('.worry-text');
-  const worryTextHeight = worryText.getBoundingClientRect().height;
-  if(scrollTop > worryTextHeight -200 && !worryText.classList.contains('slideInDown')) {
-    worryText.classList.add('slideInDown');
-  }
-});
+//   if (scrollTop > shopifyEngineerHeight + 1100 && !shopifyEngineer.classList.contains('slideInDown')) {
+//     shopifyEngineer.classList.add('slideInDown');
+//   }
+//   const worryText = document.querySelector('.worry-text');
+//   const worryTextHeight = worryText.getBoundingClientRect().height;
+//   if(scrollTop > worryTextHeight -200 && !worryText.classList.contains('slideInDown')) {
+//     worryText.classList.add('slideInDown');
+//   }
+// });
