@@ -1115,7 +1115,7 @@ body {
 
 .fv-cv-btn {
   width: 100%;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
   text-align: center;
 }
 
@@ -1143,6 +1143,13 @@ body {
   height: 30px;
   background-color: #f26601;
 }
+.line-btn__sub-text {
+  color: #00B900 !important;
+}
+.line-btn__sub-text::after,
+.line-btn__sub-text::before {
+  background-color: #00B900;
+}
 
 .cv-btn__sub-text::before {
   margin-right: 20px;
@@ -1162,7 +1169,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .fv-cv-btn {
-    margin: 2rem auto 3rem;
+    margin: 2rem auto 4rem;
   }
 }
 
@@ -1173,6 +1180,10 @@ body {
   border-radius: 10px;
   box-shadow: #787878 3px 3px 5px;
 }
+.line-btn {
+  background: linear-gradient(to right, #00B900, #00B900);
+}
+
 
 .cv-btn p {
   font-size: 2rem;
@@ -2352,11 +2363,11 @@ aside {
 .media__container {
   padding: 3rem;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .media__item {
-  margin: 3rem 0;
+  margin: 1rem 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -2366,11 +2377,22 @@ aside {
     flex-direction: column;
   }
 }
-.media__item a {
+.twitter-tweet {
+  margin: auto !important;
+}
+
+.media__item-image {
   color: -webkit-link;
-  flex-basis: 50%;
+  flex-basis: 30%;
   color: inherit;
 }
+.media__item-text {
+
+  color: -webkit-link;
+  flex-basis: 70%;
+  color: inherit;
+}
+
 
 .media__item a img {
   max-width: 70%;
@@ -2379,6 +2401,8 @@ aside {
 }
 .media__item aside {
   margin-top: 0.5rem;
+  color: inherit;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 900px) {
@@ -2387,3 +2411,36 @@ aside {
     margin-right: auto;
   }
 }
+.campaign {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.campaign-price {
+  color: red;
+}
+.campaign-text {
+  font-size: 110%;
+  margin-bottom: 0;
+}
+.campaign div {
+  display: inline-block;
+}
+
+.campaign div::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+  background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+}
+/* 追記 */
+.tmp__customize-width {
+  width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  .tmp__customize-width {
+    width: 100%;
+  }
+}
+/* 追記 終了 */
