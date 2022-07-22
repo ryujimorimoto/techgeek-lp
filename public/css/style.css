@@ -2445,3 +2445,8 @@ aside {
   }
 }
 /* 追記 終了 */
+.tuition-table {
+  margin: 1rem auto;
+  text-align: center;
+  border-spacing: 5rem 1rem;
+}
