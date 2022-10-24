@@ -408,7 +408,14 @@ body {
   font-size: 2.4rem;
   margin: 0 0.5rem;
 }
-
+.price-number-big {
+  font-size: 4rem;
+  margin: 0 0.5rem;
+}
+.twelve-slice-price {
+  color: #3c9de8;
+  text-shadow: 3px 3px #d5edff;
+}
 .price-unit {
   font-weight: normal;
 }
@@ -1450,7 +1457,7 @@ body {
 }
 
 .features {
-  background-image: url(../images/feature-bg.png);
+  background-image: url(../images/feature-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2772c5;
