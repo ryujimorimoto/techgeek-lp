@@ -11,6 +11,13 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "https://techgeek-school.com?utm_source=tech-geek.jp&utm_medium=referral",
+        "type": 301
+      }
     ]
   }
 }
